@@ -31,4 +31,15 @@
  * @subpackage    cake.app
  */
 class AppController extends Controller {
+
+    var $components = array('Auth');
+
+    function beforeFilter() {
+        $this->Auth->fields = array(
+            'username' => 'email',
+            'password' => 'password'
+        );
+       
+    }
+
 }

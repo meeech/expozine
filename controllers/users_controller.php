@@ -3,16 +3,6 @@ class UsersController extends AppController {
 
 	var $name = 'Users';
     var $scaffold;
-    
-    var $components = array('Auth');
-
-    function beforeFilter() {
-        $this->Auth->fields = array(
-            'username' => 'email',
-            'password' => 'password'
-        );
-       
-    }
 
     /**
      *  The AuthComponent provides the needed functionality
