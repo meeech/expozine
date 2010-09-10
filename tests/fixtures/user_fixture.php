@@ -1,5 +1,5 @@
 <?php
-/* User Fixture generated on: 2010-09-09 22:09:49 : 1284084529 */
+/* User Fixture generated on: 2010-09-10 00:09:20 : 1284091400 */
 class UserFixture extends CakeTestFixture {
 	var $name = 'User';
 
@@ -14,7 +14,7 @@ class UserFixture extends CakeTestFixture {
 
 	var $records = array(
 		array(
-			'id' => '4c899331-f1d4-45f5-801f-4855f591401e',
+			'id' => '4c89ae08-18f0-41f5-bc43-4387f591401e',
 			'group_id' => 'Lorem ipsum dolor sit amet',
 			'email' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet'

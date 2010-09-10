@@ -1,5 +1,5 @@
 <?php
-/* Sponsor Fixture generated on: 2010-09-09 22:09:48 : 1284084528 */
+/* Sponsor Fixture generated on: 2010-09-10 00:09:20 : 1284091400 */
 class SponsorFixture extends CakeTestFixture {
 	var $name = 'Sponsor';
 
@@ -15,7 +15,7 @@ class SponsorFixture extends CakeTestFixture {
 
 	var $records = array(
 		array(
-			'id' => '4c899330-2ec0-4195-9d70-4fe1f591401e',
+			'id' => '4c89ae08-cabc-4a6f-a5d6-48fdf591401e',
 			'title' => 'Lorem ipsum dolor sit amet',
 			'web' => 'Lorem ipsum dolor sit amet',
 			'image_en' => 'Lorem ipsum dolor sit amet',

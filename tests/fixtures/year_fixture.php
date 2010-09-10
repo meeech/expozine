@@ -1,5 +1,5 @@
 <?php
-/* Year Fixture generated on: 2010-09-09 22:09:49 : 1284084529 */
+/* Year Fixture generated on: 2010-09-10 00:09:20 : 1284091400 */
 class YearFixture extends CakeTestFixture {
 	var $name = 'Year';
 
@@ -12,7 +12,7 @@ class YearFixture extends CakeTestFixture {
 
 	var $records = array(
 		array(
-			'id' => '4c899331-8b4c-4ba0-a1f5-4a7af591401e',
+			'id' => '4c89ae08-c1a8-4a2b-8f07-4d77f591401e',
 			'year' => 1
 		),
 	);

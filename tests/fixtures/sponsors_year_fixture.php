@@ -1,5 +1,5 @@
 <?php
-/* SponsorsYear Fixture generated on: 2010-09-09 22:09:48 : 1284084528 */
+/* SponsorsYear Fixture generated on: 2010-09-10 00:09:20 : 1284091400 */
 class SponsorsYearFixture extends CakeTestFixture {
 	var $name = 'SponsorsYear';
 
