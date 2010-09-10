@@ -17,12 +17,10 @@
 		echo $this->Form->input('publishweb');
 		echo $this->Form->input('verified');
 		echo $this->Form->input('days');
-		echo $this->Form->input('created_at');
 		echo $this->Form->input('catlivres');
 		echo $this->Form->input('cataffiche');
 		echo $this->Form->input('catautre');
 		echo $this->Form->input('lang');
-		echo $this->Form->input('press');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

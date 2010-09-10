@@ -17,12 +17,11 @@
 			<th><?php echo $this->Paginator->sort('publishweb');?></th>
 			<th><?php echo $this->Paginator->sort('verified');?></th>
 			<th><?php echo $this->Paginator->sort('days');?></th>
-			<th><?php echo $this->Paginator->sort('created_at');?></th>
+			<th><?php echo $this->Paginator->sort('created');?></th>
 			<th><?php echo $this->Paginator->sort('catlivres');?></th>
 			<th><?php echo $this->Paginator->sort('cataffiche');?></th>
 			<th><?php echo $this->Paginator->sort('catautre');?></th>
 			<th><?php echo $this->Paginator->sort('lang');?></th>
-			<th><?php echo $this->Paginator->sort('press');?></th>
 			<th class="actions"><?php __('Actions');?></th>
 	</tr>
 	<?php
@@ -51,12 +50,11 @@
 		<td><?php echo $exhibitor['Exhibitor']['publishweb']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['verified']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['days']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['created_at']; ?>&nbsp;</td>
+		<td><?php echo $exhibitor['Exhibitor']['created']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['catlivres']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['cataffiche']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['catautre']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['lang']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['press']; ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $exhibitor['Exhibitor']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit', true), array('action' => 'edit', $exhibitor['Exhibitor']['id'])); ?>

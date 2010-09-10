@@ -76,9 +76,9 @@
 			<?php echo $exhibitor['Exhibitor']['days']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Created At'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Created'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $exhibitor['Exhibitor']['created_at']; ?>
+			<?php echo $exhibitor['Exhibitor']['created']; ?>
 			&nbsp;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Catlivres'); ?></dt>
@@ -99,11 +99,6 @@
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Lang'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $exhibitor['Exhibitor']['lang']; ?>
-			&nbsp;
-		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Press'); ?></dt>
-		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $exhibitor['Exhibitor']['press']; ?>
 			&nbsp;
 		</dd>
 	</dl>
