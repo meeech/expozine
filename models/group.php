@@ -1,5 +1,7 @@
 <?php
 class Group extends AppModel {
+    var $displayField = 'title';
+    
 	var $name = 'Group';
 	var $validate = array(
 		'title' => array(
