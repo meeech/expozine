@@ -32,7 +32,7 @@
  */
 class AppController extends Controller {
 
-    var $components = array('Auth');
+    var $components = array('Auth','Session');
 
     function beforeFilter() {
         $this->Auth->fields = array(

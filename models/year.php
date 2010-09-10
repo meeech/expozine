@@ -1,5 +1,6 @@
 <?php
 class Year extends AppModel {
+    var $displayField = 'year';
 	var $name = 'Year';
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
