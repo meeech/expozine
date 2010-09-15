@@ -1,5 +1,5 @@
 <?php
-/* Exhibitor Fixture generated on: 2010-09-10 00:09:20 : 1284091400 */
+/* Exhibitor Fixture generated on: 2010-09-14 19:09:49 : 1284508549 */
 class ExhibitorFixture extends CakeTestFixture {
 	var $name = 'Exhibitor';
 
@@ -24,13 +24,14 @@ class ExhibitorFixture extends CakeTestFixture {
 		'cataffiche' => array('type' => 'boolean', 'null' => true, 'default' => NULL),
 		'catautre' => array('type' => 'boolean', 'null' => true, 'default' => NULL),
 		'lang' => array('type' => 'string', 'null' => false, 'default' => 'en', 'length' => 2, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'twitter' => array('type' => 'string', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1)),
 		'tableParameters' => array()
 	);
 
 	var $records = array(
 		array(
-			'id' => '4c89ae08-3b08-4af2-903e-4f26f591401e',
+			'id' => '4c900b85-ed60-4fc9-92b1-4642f591401e',
 			'year_id' => 'Lorem ipsum dolor sit amet',
 			'title' => 'Lorem ipsum dolor sit amet',
 			'contact' => 'Lorem ipsum dolor sit amet',
@@ -45,11 +46,12 @@ class ExhibitorFixture extends CakeTestFixture {
 			'publish_web' => 1,
 			'verified' => 1,
 			'days' => 'Lo',
-			'created' => '2010-09-10 00:03:20',
+			'created' => '2010-09-14 19:55:49',
 			'catlivres' => 1,
 			'cataffiche' => 1,
 			'catautre' => 1,
-			'lang' => ''
+			'lang' => '',
+			'twitter' => 'Lorem ipsum dolor sit amet'
 		),
 	);
 }

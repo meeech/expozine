@@ -1,5 +1,5 @@
 <?php
-/* Exhibitors Test cases generated on: 2010-09-09 22:09:05 : 1284084545*/
+/* Exhibitors Test cases generated on: 2010-09-14 19:09:09 : 1284508569*/
 App::import('Controller', 'Exhibitors');
 
 class TestExhibitorsController extends ExhibitorsController {
@@ -11,7 +11,7 @@ class TestExhibitorsController extends ExhibitorsController {
 }
 
 class ExhibitorsControllerTestCase extends CakeTestCase {
-	var $fixtures = array('app.exhibitor', 'app.year', 'app.sponsor', 'app.sponsors_year');
+	var $fixtures = array('app.exhibitor');
 
 	function startTest() {
 		$this->Exhibitors =& new TestExhibitorsController();

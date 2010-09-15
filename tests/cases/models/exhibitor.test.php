@@ -1,9 +1,9 @@
 <?php
-/* Exhibitor Test cases generated on: 2010-09-10 00:09:20 : 1284091400*/
+/* Exhibitor Test cases generated on: 2010-09-14 19:09:52 : 1284508552*/
 App::import('Model', 'Exhibitor');
 
 class ExhibitorTestCase extends CakeTestCase {
-	var $fixtures = array('app.exhibitor', 'app.year', 'app.sponsor', 'app.sponsors_year');
+	var $fixtures = array('app.exhibitor');
 
 	function startTest() {
 		$this->Exhibitor =& ClassRegistry::init('Exhibitor');

@@ -6,9 +6,9 @@
 			<?php echo $exhibitor['Exhibitor']['id']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Year'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Year Id'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $this->Html->link($exhibitor['Year']['year'], array('controller' => 'years', 'action' => 'view', $exhibitor['Year']['id'])); ?>
+			<?php echo $exhibitor['Exhibitor']['year_id']; ?>
 			&nbsp;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Title'); ?></dt>
@@ -21,9 +21,9 @@
 			<?php echo $exhibitor['Exhibitor']['contact']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Phonenum'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Phone'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $exhibitor['Exhibitor']['phonenum']; ?>
+			<?php echo $exhibitor['Exhibitor']['phone']; ?>
 			&nbsp;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Email'); ?></dt>
@@ -41,9 +41,9 @@
 			<?php echo $exhibitor['Exhibitor']['city']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Prov'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Province'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $exhibitor['Exhibitor']['prov']; ?>
+			<?php echo $exhibitor['Exhibitor']['province']; ?>
 			&nbsp;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Postal'); ?></dt>
@@ -56,14 +56,14 @@
 			<?php echo $exhibitor['Exhibitor']['web']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Publishaddy'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Publish Address'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $exhibitor['Exhibitor']['publishaddy']; ?>
+			<?php echo $exhibitor['Exhibitor']['publish_address']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Publishweb'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Publish Web'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $exhibitor['Exhibitor']['publishweb']; ?>
+			<?php echo $exhibitor['Exhibitor']['publish_web']; ?>
 			&nbsp;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Verified'); ?></dt>
@@ -99,6 +99,11 @@
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Lang'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $exhibitor['Exhibitor']['lang']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Twitter'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $exhibitor['Exhibitor']['twitter']; ?>
 			&nbsp;
 		</dd>
 	</dl>
