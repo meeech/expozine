@@ -32,7 +32,7 @@
  */
 class AppController extends Controller {
 
-    var $components = array('Auth','Session', 'DebugKit.Toolbar');
+    var $components = array('Auth','Session', 'Security', 'DebugKit.Toolbar');
 
 
 	/**
