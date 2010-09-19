@@ -14,6 +14,9 @@ class ExhibitorsController extends AppController {
      * @return void
      **/
 	function register() {
+	    
+        $this->layout = 'front_end';
+	    
 		if (!empty($this->data)) {
 			$this->Exhibitor->create();
 			if ($this->Exhibitor->save($this->data)) {
