@@ -13,6 +13,7 @@
 div.hd {
     padding-bottom: 60px;
 }
+
 div.hd h1 {
     font-family: helvetica,arial,sans-serif;
     font-size: 10em;
@@ -24,6 +25,7 @@ div.hd h1 {
 }
 
 h1 span.year {
+    color: #333;    
     padding-left: 10px;
     font-family: helvetica,arial,sans-serif;
     letter-spacing: -.05em;
@@ -42,10 +44,14 @@ div.hd a {
 		<h1><?php echo $this->Html->link(__('expozine', true), 'http://www.expozine.ca/'.$lang ); ?><span class="year">2010</span></h1>
     </div>
     <div class="content yui3-u-3-4">
+        <div class="content">
+            <?php echo $this->Session->flash(); ?>
+			<?php echo $content_for_layout; ?>
+        </div>
         Content
     </div>
     <div class="sidebar yui3-u-1-4">
-        Nav
+        <?php echo $this->element('nav')?>
     </div>
 </div>
 </body>
