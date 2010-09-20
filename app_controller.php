@@ -64,6 +64,9 @@ class AppController extends Controller {
             'password' => 'password'
         );
         
+        //Set up the current year for all to use        
+        $this->set('currentYear', ClassRegistry::init('Year')->currentYear());
+
         $this->initLanguage();
        
     }
