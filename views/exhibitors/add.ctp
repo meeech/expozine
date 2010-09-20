@@ -16,7 +16,12 @@
 		echo $this->Form->input('publish_address');
 		echo $this->Form->input('publish_web');
 		echo $this->Form->input('verified');
-		echo $this->Form->input('days');
+		echo $this->Form->input('days', array(
+		    'options' => array('sat'=>__('Saturday 20$',true),'sun'=>__('Sunday',true),'both'=>__('Saturday &amp; Sunday',true)),
+		    'type' => 'radio'
+            ));
+
+		
 		echo $this->Form->input('catlivres');
 		echo $this->Form->input('cataffiche');
 		echo $this->Form->input('catautre');

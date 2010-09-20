@@ -3,7 +3,8 @@
 	<fieldset>
  		<legend><?php __('Add Exhibitor'); ?></legend>
 	<?php
-		echo $this->Form->input('year_id');
+		echo $this->Form->input('lang', array('type'=>'hidden','value'=>$lang));
+		echo $this->Form->input('year_id', array('type'=>'hidden', 'value'=>$currentYear['Year']['id']));
 		echo $this->Form->input('title');
 		echo $this->Form->input('contact');
 		echo $this->Form->input('phone');
@@ -16,22 +17,15 @@
 		echo $this->Form->input('publish_address');
 		echo $this->Form->input('publish_web');
 		echo $this->Form->input('verified');
-		echo $this->Form->input('days');
+		echo $this->Form->input('days', array(
+		    'options' => array('sat'=>__('Saturday 20$',true),'sun'=>__('Sunday',true),'both'=>__('Saturday &amp; Sunday',true)),
+		    'type' => 'radio'
+            ));
 		echo $this->Form->input('catlivres');
 		echo $this->Form->input('cataffiche');
 		echo $this->Form->input('catautre');
-		echo $this->Form->input('lang');
 		echo $this->Form->input('twitter');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>
-</div>
-<div class="actions">
-	<h3><?php __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Html->link(__('List Exhibitors', true), array('action' => 'index'));?></li>
-		<li><?php echo $this->Html->link(__('List Years', true), array('controller' => 'years', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Year', true), array('controller' => 'years', 'action' => 'add')); ?> </li>
-	</ul>
 </div>
