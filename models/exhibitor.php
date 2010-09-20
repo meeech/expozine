@@ -23,11 +23,11 @@ class Exhibitor extends AppModel {
 			),
 		),
 		'phone' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
+			'phone' => array(
+				'rule' => array('phone', null, 'all'),
 				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
+				'allowEmpty' => true,
+                'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
@@ -45,7 +45,7 @@ class Exhibitor extends AppModel {
 		'days' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+                'message' => 'notempty_days',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
