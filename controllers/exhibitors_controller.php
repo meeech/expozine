@@ -3,6 +3,16 @@ class ExhibitorsController extends AppController {
 
 	var $name = 'Exhibitors';
 
+    /**
+     * undocumented function
+     *
+     * @return void
+     **/
+    function beforeFilter() {
+        $this->Auth->allow(array('register'));
+        parent::beforeFilter();
+    }
+
 	function index() {
 		$this->Exhibitor->recursive = 0;
 		$this->set('exhibitors', $this->paginate());
