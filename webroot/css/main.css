@@ -1,5 +1,6 @@
 body {
-    border: 1px solid red;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
     margin: auto; /* center in viewport */
     width: 960px;
 }
@@ -12,13 +13,13 @@ form {
 	width: 95%;
 }
 fieldset {
-	border: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 	margin-bottom: 1em;
 	padding: 16px 20px;
 }
 fieldset legend {
 	background:#fff;
-	color: #e32;
+	color: #333;
 	font-size: 160%;
 	font-weight: bold;
 }
@@ -59,6 +60,8 @@ form div.submit {
 	margin-top: 10px;
 }
 div.text label {
+    padding-right: 20px;
+    text-align:right;
 	display: inline-block;
 	font-size: 110%;
 	margin-bottom:3px;
@@ -84,27 +87,38 @@ option {
 	padding: 0 3px;
 }
 input[type=checkbox] {
-	clear: left;
-	float: left;
+/*  clear: left;*/
+/*  float: left;*/
 	margin: 0px 6px 7px 2px;
 	width: auto;
+}
+div.checkbox {
+    text-align: right;
+    display: inline-block;
+    width: 30%;
 }
 div.checkbox label {
 	display: inline;
 }
 
+div.radio {
+    padding-left: 70px;
+}
+div.radio label {
+    padding-right: 20px;
+}
+div.radio fieldset {
+    border: 0px;
+}
 input[type=text] {
   width:75%;
 }
 
 input[type=radio] {
-	float:left;
 	width:auto;
-	margin: 0 3px 7px 0;
+	margin: 0 0px 7px 0;
 }
-div.radio label {
-	margin: 0 0 6px 20px;
-}
+
 input[type=submit] {
 	display: inline;
 	font-size: 110%;

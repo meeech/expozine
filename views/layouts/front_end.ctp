@@ -11,13 +11,13 @@
 </head>
 <style type="text/css" media="screen">
 div.hd {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 div.hd h1 {
     font-family: helvetica,arial,sans-serif;
     font-size: 10em;
-    padding: 0px;
+    padding: 0 0 0 20px;
     margin: 0px;
     line-height: .7em;
     letter-spacing: -.1em;
@@ -48,7 +48,6 @@ div.hd a {
             <?php echo $this->Session->flash(); ?>
 			<?php echo $content_for_layout; ?>
         </div>
-        Content
     </div>
     <div class="sidebar yui3-u-1-4">
         <?php echo $this->element('nav')?>
