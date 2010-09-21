@@ -15,7 +15,7 @@ class Exhibitor extends AppModel {
         'title' => array(
             'notempty' => array(
                 'rule' => array('notempty'),
-                //'message' => 'Your custom message here',
+                'message' => 'notempty_title',
                 //'allowEmpty' => false,
                 //'required' => false,
                 //'last' => false, // Stop validation after this rule
@@ -25,7 +25,7 @@ class Exhibitor extends AppModel {
         'contact' => array(
             'notempty' => array(
                 'rule' => array('notempty'),
-                //'message' => 'Your custom message here',
+                'message' => 'notempty_contact',
                 //'allowEmpty' => false,
                 //'required' => false,
                 //'last' => false, // Stop validation after this rule
@@ -45,7 +45,7 @@ class Exhibitor extends AppModel {
 		'email' => array(
 			'email' => array(
 				'rule' => array('email'),
-				//'message' => 'Your custom message here',
+                'message' => 'notempty_email',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

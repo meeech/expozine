@@ -94,8 +94,8 @@ input[type=checkbox] {
 }
 div.checkbox {
     text-align: right;
-    display: inline-block;
-    width: 30%;
+    display: inline;
+/*    width: 30%;*/
 }
 div.checkbox label {
 	display: inline;
