@@ -5,6 +5,66 @@ body {
     width: 960px;
 }
 
+div.hd {
+    padding-bottom: 40px;
+}
+
+div.hd h1 {
+    font-family: helvetica,arial,sans-serif;
+    font-size: 10em;
+    padding: 0 0 0 20px;
+    margin: 0px;
+    line-height: .7em;
+    letter-spacing: -.1em;
+    
+}
+
+h1 span.year {
+    color: #333;    
+    padding-left: 10px;
+    font-family: helvetica,arial,sans-serif;
+    letter-spacing: -.05em;
+    font-size: .4em;
+}
+
+div.hd a {
+    color: #333;
+    text-decoration: none;
+}
+
+div.hd a:hover {
+    color: #999;
+}
+
+div.sidebar div.content ul {
+    display:inline;
+}
+
+div.sidebar div.content {
+    padding-top: 20px;
+}
+
+div.sidebar div.content ul li{
+    font-size: 1.4em;
+    list-style: none;
+}
+
+div.sidebar div.content ul li a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #999;
+}
+
+div.bd > div.content {
+/*    border: 1px solid red;*/
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+    padding: 0 0 0 20px;
+}
+
 /** Forms **/
 form {
 	clear: both;
@@ -13,9 +73,8 @@ form {
 	width: 95%;
 }
 fieldset {
-	border-right: 1px solid #ccc;
 	margin-bottom: 1em;
-	padding: 16px 20px;
+	padding: 16px 10px 16px 0;
 }
 fieldset legend {
 	background:#fff;

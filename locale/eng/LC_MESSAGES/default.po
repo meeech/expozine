@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: Tue Sep 21 00:33:00 EDT 2010\n"
+"Project-Id-Version: Expozine\n"
+"Last-Translator: Plank <info@plankdesign.com>\n"
+"Language-Team: Plank <info@plankdesign.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "notempty_title"
+msgstr "Nom Maison d&rsquo;&eacute;dition ou Publication requis"
+
+msgid "notempty_contact"
+msgstr "Personne Contacte requis"
+
+msgid "notempty_days"
+msgstr "Veuillez entrer quel jours"
+
+msgid "notempty_email"
+msgstr "Please enter a valid e-mail address"
+

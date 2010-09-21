@@ -68,3 +68,16 @@ msgstr "Autre"
 
 msgid "Register"
 msgstr "Soumettre"
+
+msgid "notempty_title"
+msgstr "Name is required"
+
+msgid "notempty_contact"
+msgstr "Contact Name is required"
+
+msgid "notempty_days"
+msgstr "Please select a day"
+
+msgid "notempty_email"
+msgstr "Veuillez entrer une adresse courriel valid"
+
