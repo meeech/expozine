@@ -16,7 +16,7 @@
 		echo $this->Form->input('publish_address', array('label'=>__('Publish address in Expozine brochure', true)));
 		echo $this->Form->input('publish_web',array('label'=>__('Publish Website in Expozine brochure', true)));
 		echo $this->Form->input('days', array(
-		    'options' => array('sat'=>__('Saturday 20$',true),'sun'=>__('Sunday',true),'both'=>__('Saturday &amp; Sunday',true)),
+		    'options' => array('sat'=>__('Saturday',true).' ($20)','sun'=>__('Sunday',true).' ($20)','both'=>__('Saturday &amp; Sunday',true).' ($35)'),
 		    'type' => 'radio'
             ));
 		echo $this->Form->input('catlivres', array('label'=>__('Books/Zines', true)));

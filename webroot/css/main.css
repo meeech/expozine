@@ -58,6 +58,7 @@ form div.submit {
 	border: 0;
 	clear: both;
 	margin-top: 10px;
+	text-align: center;
 }
 div.text label {
     padding-right: 20px;

@@ -36,6 +36,30 @@ div.hd a {
     color: #333;
     text-decoration: none;
 }
+
+div.hd a:hover {
+    color: #999;
+}
+
+div.sidebar div.content ul {
+    display:inline;
+    padding: 0px;
+}
+
+div.sidebar div.content ul li{
+    font-size: 1.4em;
+    list-style: none;
+}
+
+div.sidebar div.content ul li a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #999;
+}
+
 </style>
 
 <body>
@@ -50,7 +74,9 @@ div.hd a {
         </div>
     </div>
     <div class="sidebar yui3-u-1-4">
-        <?php echo $this->element('nav')?>
+        <div class="content">
+            <?php echo $this->element('nav')?>            
+        </div>
     </div>
 </div>
 </body>

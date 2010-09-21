@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: Mon Sep 20 22:50:43 EDT 2010\n"
+"Project-Id-Version: Mitch\n"
+"Last-Translator: Plank <info@plankdesign.com>\n"
+"Language-Team: Plank <info@plankdesign.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Return to Expozine"
+msgstr "Retour au Expozine"
+
+# Form 
+msgid "Name"
+msgstr "Nom"
+
+msgid "Contact Name"
+msgstr "Personne contacte"
+
+msgid "Phone Number"
+msgstr "T&eacute;l&eacute;phone"
+
+msgid "E-mail"
+msgstr "Courriel"
+
+msgid "Address"
+msgstr "Addresse"
+
+msgid "City"
+msgstr "Ville"
+
+msgid "Province/State"
+msgstr "Province/State"
+
+msgid "Postal/Zip Code"
+msgstr "Code Postal/Zip"
+
+msgid "Website"
+msgstr "Site web"
+
+msgid "Publish address in Expozine brochure"
+msgstr "Publier l&rsquo;adresse dans la brochure Expozine"
+
+msgid "Publish Website in Expozine brochure"
+msgstr "Publier le site web dans la brochure Expozine."
+
+msgid "Days"
+msgstr "Journée"
+
+msgid "Saturday"
+msgstr "Samedi"
+
+msgid "Sunday"
+msgstr "Dimanche"
+
+msgid "Saturday &amp; Sunday"
+msgstr "Samedi et Dimanche"
+
+msgid "Books/Zines"
+msgstr "Livres/fanzine"
+
+msgid "Posters"
+msgstr "Affiches"
+
+msgid "Other"
+msgstr "Autre"
+
+msgid "Register"
+msgstr "Soumettre"
