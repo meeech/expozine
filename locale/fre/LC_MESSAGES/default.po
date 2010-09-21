@@ -70,13 +70,13 @@ msgid "Register"
 msgstr "Soumettre"
 
 msgid "notempty_title"
-msgstr "Name is required"
+msgstr "Nom Maison d'édition ou Publication requis"
 
 msgid "notempty_contact"
-msgstr "Contact Name is required"
+msgstr "Personne Contacte requis"
 
 msgid "notempty_days"
-msgstr "Please select a day"
+msgstr "Veuillez entrer quel jours"
 
 msgid "notempty_email"
 msgstr "Veuillez entrer une adresse courriel valid"

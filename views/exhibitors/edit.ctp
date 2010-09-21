@@ -33,7 +33,7 @@
 
 		<li><?php echo $this->Html->link(__('Delete', true), array('action' => 'delete', $this->Form->value('Exhibitor.id')), null, sprintf(__('Are you sure you want to delete # %s?', true), $this->Form->value('Exhibitor.id'))); ?></li>
 		<li><?php echo $this->Html->link(__('List Exhibitors', true), array('action' => 'index'));?></li>
-		<li><?php echo $this->Html->link(__('List Years', true), array('controller' => 'years', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Year', true), array('controller' => 'years', 'action' => 'add')); ?> </li>
+        <!-- <li><?php echo $this->Html->link(__('List Years', true), array('controller' => 'years', 'action' => 'index')); ?> </li>
+        <li><?php echo $this->Html->link(__('New Year', true), array('controller' => 'years', 'action' => 'add')); ?> </li> -->
 	</ul>
 </div>

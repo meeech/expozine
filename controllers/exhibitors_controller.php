@@ -9,7 +9,7 @@ class ExhibitorsController extends AppController {
      * @return void
      **/
     function beforeFilter() {
-        $this->Auth->allow(array('register'));
+        $this->Auth->allow(array('register', 'thankyou'));
         parent::beforeFilter();
     }
 
@@ -30,15 +30,33 @@ class ExhibitorsController extends AppController {
 		if (!empty($this->data)) {
 			$this->Exhibitor->create();
 			if ($this->Exhibitor->save($this->data)) {
-				$this->Session->setFlash(__('The exhibitor has been saved', true));
-				$this->redirect(array('action' => 'index'));
+                // $this->Session->setFlash(__('The exhibitor has been saved', true));
+                $this->Session->write('exhibitor_id', $this->Exhibitor->id);
+                $this->redirect(array('action' => 'success', 'language'=>$this->requestLanguage));
 			} else {
-				$this->Session->setFlash(__('The exhibitor could not be saved. Please, try again.', true));
+				$this->Session->setFlash(__('There seems to be a problem. Please review the form and try again.', true));
 			}
 		}
 		$years = $this->Exhibitor->Year->find('list');
 		$this->set(compact('years'));
 	}
+
+
+    /**
+     * undocumented function
+     *
+     * @return void
+     **/
+    function success() {
+        $this->layout = 'front_end';
+
+        $exhibitor = false;
+        if($this->Session->read('exhibitor_id')) {
+            $exhibitor = $this->Exhibitor->read(null, $this->Session->read('exhibitor_id'));
+        }
+
+        $this->set(compact('exhibitor'));
+    }
 
 
 	function view($id = null) {

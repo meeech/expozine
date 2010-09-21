@@ -36,7 +36,7 @@
 	<ul>
 
 		<li><?php echo $this->Html->link(__('List Exhibitors', true), array('action' => 'index'));?></li>
-		<li><?php echo $this->Html->link(__('List Years', true), array('controller' => 'years', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Year', true), array('controller' => 'years', 'action' => 'add')); ?> </li>
+        <!-- <li><?php echo $this->Html->link(__('List Years', true), array('controller' => 'years', 'action' => 'index')); ?> </li>
+        <li><?php echo $this->Html->link(__('New Year', true), array('controller' => 'years', 'action' => 'add')); ?> </li> -->
 	</ul>
 </div>

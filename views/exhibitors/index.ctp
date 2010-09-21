@@ -2,28 +2,23 @@
 	<h2><?php __('Exhibitors');?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id');?></th>
- 			<th><?php echo $this->Paginator->sort('year_id');?></th>
-			<th><?php echo $this->Paginator->sort('title');?></th>
-			<th><?php echo $this->Paginator->sort('contact');?></th>
-			<th><?php echo $this->Paginator->sort('phone');?></th>
-			<th><?php echo $this->Paginator->sort('email');?></th>
-			<th><?php echo $this->Paginator->sort('address');?></th>
-			<th><?php echo $this->Paginator->sort('city');?></th>
-			<th><?php echo $this->Paginator->sort('province');?></th>
-			<th><?php echo $this->Paginator->sort('postal');?></th>
-			<th><?php echo $this->Paginator->sort('web');?></th>
-			<th><?php echo $this->Paginator->sort('publish_address');?></th>
-			<th><?php echo $this->Paginator->sort('publish_web');?></th>
-			<th><?php echo $this->Paginator->sort('verified');?></th>
-			<th><?php echo $this->Paginator->sort('days');?></th>
-			<th><?php echo $this->Paginator->sort('created');?></th>
-			<th><?php echo $this->Paginator->sort('catlivres');?></th>
-			<th><?php echo $this->Paginator->sort('cataffiche');?></th>
-			<th><?php echo $this->Paginator->sort('catautre');?></th>
-			<th><?php echo $this->Paginator->sort('lang');?></th>
-			<th><?php echo $this->Paginator->sort('twitter');?></th>
-			<th class="actions"><?php __('Actions');?></th>
+        <th><?php echo $this->Paginator->sort('verified');?></th>
+    	<th><?php echo $this->Paginator->sort('year_id');?></th>
+        <th><?php echo $this->Paginator->sort('title');?></th>
+        <th><?php echo $this->Paginator->sort('contact');?></th>
+        <th><?php echo $this->Paginator->sort('phone');?></th>
+        <th><?php echo $this->Paginator->sort('email');?></th>
+        <th><?php echo $this->Paginator->sort('address');?></th>
+        <th><?php echo $this->Paginator->sort('city');?></th>
+        <th><?php echo $this->Paginator->sort('province');?></th>
+        <th><?php echo $this->Paginator->sort('postal');?></th>
+        <th><?php echo $this->Paginator->sort('web');?></th>
+        <th><?php echo $this->Paginator->sort('publish_address');?></th>
+        <th><?php echo $this->Paginator->sort('publish_web');?></th>
+        <th><?php echo $this->Paginator->sort('days');?></th>
+        <th><?php echo $this->Paginator->sort('created');?></th>
+        <th><?php echo $this->Paginator->sort('lang');?></th>
+        <th class="actions"><?php __('Actions');?></th>
 	</tr>
 	<?php
 	$i = 0;
@@ -34,7 +29,7 @@
 		}
 	?>
 	<tr<?php echo $class;?>>
-		<td><?php echo $exhibitor['Exhibitor']['id']; ?>&nbsp;</td>
+	    <td><?php echo ($exhibitor['Exhibitor']['verified']) ? 'Yes' : 'No'; ?></td>
 		<td>
         	<?php echo $this->Html->link($exhibitor['Year']['year'], array('controller' => 'years', 'action' => 'view', $exhibitor['Year']['id'])); ?>
         </td>
@@ -49,14 +44,9 @@
 		<td><?php echo $exhibitor['Exhibitor']['web']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['publish_address']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['publish_web']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['verified']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['days']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['created']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['catlivres']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['cataffiche']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['catautre']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['lang']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['twitter']; ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $exhibitor['Exhibitor']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit', true), array('action' => 'edit', $exhibitor['Exhibitor']['id'])); ?>
@@ -83,7 +73,7 @@
 	<h3><?php __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Exhibitor', true), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Years', true), array('controller' => 'years', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Year', true), array('controller' => 'years', 'action' => 'add')); ?> </li>
+        <!-- <li><?php echo $this->Html->link(__('List Years', true), array('controller' => 'years', 'action' => 'index')); ?> </li>
+        <li><?php echo $this->Html->link(__('New Year', true), array('controller' => 'years', 'action' => 'add')); ?> </li> -->
 	</ul>
 </div>
