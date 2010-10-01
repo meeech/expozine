@@ -9,7 +9,7 @@ class ExhibitorsController extends AppController {
      * @return void
      **/
     function beforeFilter() {
-        $this->Auth->allow(array('register', 'thankyou'));
+        $this->Auth->allow(array('register', 'success'));
         parent::beforeFilter();
     }
 
