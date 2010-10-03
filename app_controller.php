@@ -95,6 +95,8 @@ class AppController extends Controller {
         
         //We need this accessible for generating the 'alternate' links/ lang switcher around the site
         $this->set('site_languages', $this->languages);
+        $altlang = ('en' == $reqLang) ? 'fr' : 'en' ;
+        $this->set('altlang', $altlang );
         $this->set('lang', $reqLang);
 	}
 
