@@ -29,8 +29,10 @@
  */
 Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 // Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+Router::connect('/:language/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 // Router::connect('/:language/*', array('controller' => 'pages', 'action' => 'display'), array('language' => '[a-z]{2}'));
 Router::connect('/:language/:controller/:action/*', array('action' => 'index'), array('language' => '[a-z]{2}'));
 Router::connect('/:language/:controller/*', array('action' => 'index'), array('language' => '[a-z]{2}'));
+
 Router::connect('/:language', array('controller'=>'pages','action' => 'display', 'home'), array('language' => '[a-z]{2}'));
