@@ -25,7 +25,7 @@
     </div>
     <div class="sidebar yui3-u-1-4">
         <div class="content">
-            <?php echo $this->element('nav')?>            
+            <?php echo $this->element("nav/$lang")?>
         </div>
     </div>
 </div>

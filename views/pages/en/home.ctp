@@ -1,0 +1,10 @@
+<h2>ANNOUNCING EXPOZINE 2010, <br>MONTREAL’S TENTH ANNUAL SMALL PRESS, COMIC AND ZINE FAIR!</h2>
+ <p>Expozine, Montreal’s annual small press, comic and zine fair, will take place on Saturday, November 13 and Sunday, November 14, 2010, from 12 p.m. to 6 p.m. at 5035 St-Dominique (Église Saint-Enfant Jésus, Laurier Métro). Free admission.</p>
+<p>This incredible event brings together nearly 300 creators of all kinds of publications– from books to zines to graphic novels – in both English and French. In the past nine years, Expozine has become one of North America's largest small press fairs, attracting thousands of visitors as well as exhibitors from across North America and even Europe!</p>
+<p>Come discover a universe of publications and printed works that is hard to find anywhere, much less all in the same room! It’s also a rare opportunity to meet hundreds of young and emerging authors, publishers and artists, and see what the winners of last year’s Expozine Alternative Press Awards are up to.</p>
+<p>A program of discussions and readings will take place throughout the event, as well as an opening party on Friday, November 12 (details to be announced here). Not to be missed!</p>
+<p>To reserve a table at Expozine, fill out the registration form here before November 1, 2010; you will receive a confirmation by email shortly afterwards.</p>
+<p><strong>NOTE: Expozine is a SMALL PRESS FAIR and registration is strictly limited to publishers and produced of printed publications; vendors of visual art, clothing, T-shirts, arts and crafts, music etc. cannot reserve tables because of the many other arts and crafts fairs that take place in Montreal.</strong></p>
+<p>We’re also looking for sponsors!!! For information on becoming a sponsor, contact us by email at <a href="mailto:&#x65;&#x78;&#x70;&#x6F;&#x7A;&#x69;&#x6E;&#x65;&#x40;&#x61;&#x72;&#x63;&#x68;&#x69;&#x76;&#x65;&#x6D;&#x6F;&#x6E;&#x74;&#x72;&#x65;&#x61;&#x6C;&#x2E;&#x6F;&#x72;&#x67;">expozine@archivemontreal.org</a>.</p>
+<p>Expozine is made possible through the support of the Canada Council for the Arts and the Conseil des Arts de Montréal.</p>
+

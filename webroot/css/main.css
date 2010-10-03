@@ -45,7 +45,7 @@ div.sidebar div.content {
 }
 
 div.sidebar div.content ul li{
-    font-size: 1.4em;
+    font-size: 1.1em;
     list-style: none;
 }
 
@@ -62,7 +62,7 @@ div.bd > div.content {
 /*    border: 1px solid red;*/
     border-right: 1px solid #ccc;
     margin-right: 10px;
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 20px;
 }
 
 /** Forms **/
