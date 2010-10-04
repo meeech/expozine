@@ -10,16 +10,4 @@ Expozine 2006 brought together more than 230 presses, self-publishers and creato
 </p>
 <p><a href="http://www.youtube.com/results?search_query=Expozine&search=Search">Expozine on Youtube!</a></p>
 <p><a href="http://www.flickr.com/search/?q=Expozine">Expozine photos on Flickr!</a></p>
-  <a name="participants"></a> 
   
-<table id="registrants">
-<tr><th colspan="2"><h2> Here are some of the exhibitors who participated this year:</h2></th></tr>
-<?php
-	include_once('../inc/registrants_list.php');
-?>
-</table>
-<h1> </h1>
-<h2>The sponsors</h2>
-<?php include "sponsors_random.php"; ?>
-
-

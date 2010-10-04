@@ -80,4 +80,3 @@ msgstr "Veuillez entrer quel jours"
 
 msgid "notempty_email"
 msgstr "Veuillez entrer une adresse courriel valid"
-

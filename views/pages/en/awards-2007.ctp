@@ -74,10 +74,3 @@
 <p>Photo by Denis-Carl Robidoux</p> 
 <img src="img/pics2007/expozine_2.jpg" width="600" height="158" alt="Expozine 2" hspace="20" vspace="20">
 <p>Photo by Louis Rastelli</p> 
-
- <div class="spacer"></div>
- <a name="sponsors"></a>
- <h1>This year's sponsors</h1>
- 
-<?php include '../inc/sponsors_list.php'; ?>
-

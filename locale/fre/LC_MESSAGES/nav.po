@@ -13,3 +13,12 @@ msgstr "English"
 
 msgid "Home"
 msgstr "Accueil"
+
+msgid "Awards"
+msgstr "Prix Expozine"
+
+msgid "About"
+msgstr "Historique"
+
+msgid "Register"
+msgstr "Enregistrer"

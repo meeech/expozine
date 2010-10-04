@@ -1,4 +1,3 @@
-<?   include '../inc/header_en.php'; ?>
 
 <!-- EDIT CONTENT HERE FOR PAGE-->
 

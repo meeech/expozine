@@ -130,9 +130,4 @@
 
 	<p>Expozine is made possible through the support of the Canada Council for the Arts.</p>
 
- <div class="spacer"></div>
- <a name="sponsors"></a>
- <h1>This year's sponsors</h1>
- 
-<?php include '../inc/sponsors_list.php'; ?>
 
