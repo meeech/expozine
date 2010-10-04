@@ -65,6 +65,10 @@ div.bd > div.content {
     padding: 0 20px 0 20px;
 }
 
+.sponsors {
+    padding-left: 20px;
+}
+
 /** Forms **/
 form {
 	clear: both;
