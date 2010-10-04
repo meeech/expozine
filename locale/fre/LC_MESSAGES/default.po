@@ -69,6 +69,9 @@ msgstr "Autre"
 msgid "Register"
 msgstr "Soumettre"
 
+msgid "Created"
+msgstr "Crée"
+
 msgid "notempty_title"
 msgstr "Nom Maison d'édition ou Publication requis"
 
@@ -80,3 +83,9 @@ msgstr "Veuillez entrer quel jours"
 
 msgid "notempty_email"
 msgstr "Veuillez entrer une adresse courriel valid"
+
+msgid "Yes"
+msgstr "Oui"
+
+msgid "No"
+msgstr "Non"
