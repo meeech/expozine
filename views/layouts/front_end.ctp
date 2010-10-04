@@ -28,7 +28,12 @@
             <?php echo $this->element("nav")?>
         </div>
     </div>
+    
+    <div class="ft yui3-u-1">
+        <?php echo $this->element('sponsors'); ?>
+    </div>
 </div>
+
 </body>
 <?php echo $this->element('ga'); ?>
 </html>
