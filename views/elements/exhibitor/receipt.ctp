@@ -1,18 +1,3 @@
-<style type="text/css" media="screen">
-.receipt {
-    font-size: 1.2em    ;
-}
-.receipt dl dd {
-    border: 1px solid red;
-    display: inline-block;
-    width: 70%; 
-}
-.receipt dl dt {
-    border: 1px solid red;
-    display: inline-block;
-    width: 20%;
-}
-</style>
 <div class="exhibitors receipt">
 <h2><?php  __('Exhibitor');?></h2>
 	<dl><?php $i = 0; $class = ' class="altrow"';?>

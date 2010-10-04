@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.2.0/build/cssreset/reset-min.css&3.2.0/build/cssfonts/fonts-min.css&3.2.0/build/cssgrids/grids-min.css&3.2.0/build/cssbase/base-min.css">
 	<?php echo $this->Html->css('main'); ?>
+	<style type="text/css" media="print">
+	   .sidebar, .sponsors {
+	       display:none;
+	   }
+	</style>
 </head>
 <style type="text/css" media="screen">
 </style>
