@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: Sun Oct  3 08:53:07 EDT 2010\n"
-"Project-Id-Version: Expozine\n"
+"Project-Id-Version: French Expozine\n"
 "Last-Translator: Plank <info@plankdesign.com>\n"
 "Language-Team: Plank <info@plankdesign.com>\n"
 "MIME-Version: 1.0\n"
@@ -10,3 +10,6 @@ msgstr ""
 
 msgid "other_lang"
 msgstr "English"
+
+msgid "Home"
+msgstr "Accueil"
