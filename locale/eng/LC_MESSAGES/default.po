@@ -9,13 +9,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "notempty_title"
-msgstr "Nom Maison d&rsquo;&eacute;dition ou Publication requis"
+msgstr "Name of publication or company name is required."
 
 msgid "notempty_contact"
-msgstr "Personne Contacte requis"
+msgstr "Contact Person is required"
 
 msgid "notempty_days"
-msgstr "Veuillez entrer quel jours"
+msgstr "You have to choose some days."
 
 msgid "notempty_email"
 msgstr "Please enter a valid e-mail address"
