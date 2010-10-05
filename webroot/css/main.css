@@ -5,6 +5,16 @@ body {
     width: 960px;
 }
 
+a {
+    color: #4F2700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #999;
+}
+
+
 div.hd {
     padding-bottom: 40px;
 }

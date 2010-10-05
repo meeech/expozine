@@ -29,7 +29,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link(__('Expozine', true), 'http://www.expozine.ca/'.$lang ); ?></h1>
+			<h1><a href="<?php echo $this->Html->url('/',true).$lang ?>"><?php __('Expozine')?></a></h1>
 		</div>
 		<div id="content">
 
