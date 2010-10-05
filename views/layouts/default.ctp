@@ -30,9 +30,11 @@
 	<div id="container">
 		<div id="header">
 			<h1><a href="<?php echo $this->Html->url('/',true).$lang ?>"><?php __('Expozine')?></a></h1>
-			<div>
-			    <a href="<?php echo $this->Html->url(array('controller'=>'users', 'action'=>'logout', 'language'=>$lang),true) ?>"><?php __('Logout')?></a>
+            <?php if ($this->Session->read('Auth.User')): ?>                
+			<div class="actions">
+			    <ul><li><a href="<?php echo $this->Html->url(array('controller'=>'users', 'action'=>'logout', 'language'=>$lang),true) ?>"><?php __('Logout')?></a></li></ul>
 			</div>
+            <?php endif ?>
 		</div>
 		<div id="content">
 
