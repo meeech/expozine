@@ -30,8 +30,8 @@
 	<div id="container">
 		<div id="header">
 			<h1><a href="<?php echo $this->Html->url('/',true).$lang ?>"><?php __('Expozine')?></a></h1>
-			<div >
-			    <a href="<?php echo $this->Html->url(array('controller'=>'users', 'action'=>'logout'),true).$lang ?>"><?php __('Logout')?></a>
+			<div>
+			    <a href="<?php echo $this->Html->url(array('controller'=>'users', 'action'=>'logout', 'language'=>$lang),true) ?>"><?php __('Logout')?></a>
 			</div>
 		</div>
 		<div id="content">
