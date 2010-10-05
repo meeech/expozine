@@ -58,15 +58,22 @@ class AppController extends Controller {
 
 
     function beforeFilter() {
-        $this->Auth->fields = array(
-            'username' => 'email',
-            'password' => 'password'
-        );
-        
         //Set up the current year for all to use        
         $this->set('currentYear', ClassRegistry::init('Year')->currentYear());
 
         $this->initLanguage();
+        
+        $this->Auth->loginAction = array(
+            'controller' => 'users',
+            'action' => 'login',
+            'language' => $this->requestLanguage
+        );
+
+        $this->Auth->loginRedirect = array('language'=> $this->requestLanguage, 'controller' => 'exhibitors', 'action' => 'index');
+        $this->Auth->fields = array(
+            'username' => 'email',
+            'password' => 'password'
+        );
        
     }
 
@@ -82,6 +89,7 @@ class AppController extends Controller {
 
         //If there's no lang set, guess.
         if(!isset($this->params['language'])) {
+            // $this->params['language'] = $this->LanguageGuess->guess();
             $this->redirect('/'.$this->LanguageGuess->guess());
         }
 
