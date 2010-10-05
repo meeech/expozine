@@ -71,7 +71,7 @@
 				<?php echo ife($exhibitor['Exhibitor']['catlivres'], __('Yes',true), __('No', true)); ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Posters'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Comics'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo ife($exhibitor['Exhibitor']['cataffiche'], __('Yes',true), __('No', true)); ?>
 			&nbsp;

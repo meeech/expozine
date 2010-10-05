@@ -25,7 +25,7 @@
         <div>
         <?php
 		echo $this->Form->input('catlivres', array('label'=>__('Books/Zines', true)));
-		echo $this->Form->input('cataffiche', array('label'=>__('Posters', true)));
+		echo $this->Form->input('cataffiche', array('label'=>__('Comics', true)));
 		echo $this->Form->input('catautre', array('label'=>__('Other', true)));
 		?>
         </div>

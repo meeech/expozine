@@ -60,8 +60,8 @@ msgstr "Samedi et Dimanche"
 msgid "Books/Zines"
 msgstr "Livres/fanzine"
 
-msgid "Posters"
-msgstr "Affiches"
+msgid "Comics"
+msgstr "Bande dessinées"
 
 msgid "Other"
 msgstr "Autre"
@@ -89,6 +89,9 @@ msgstr "Oui"
 
 msgid "No"
 msgstr "Non"
+
+msgid "Exhibitor"
+msgstr "Exposant"
 
 msgid "This year's sponsors"
 msgstr "Commanditaires cette année"
