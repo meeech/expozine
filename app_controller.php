@@ -32,8 +32,7 @@
  */
 class AppController extends Controller {
 
-    var $components = array('Auth','Session', 'Security', 'DebugKit.Toolbar');
-
+    var $components = array('Auth','Session', 'Security', 'DebugKit.Toolbar', 'LanguageGuess');
 
 	/**
 	 * Available languages
@@ -80,6 +79,11 @@ class AppController extends Controller {
 	function initLanguage() {
         //Set default
         $reqLang = reset($this->languages);
+
+        //If there's no lang set, guess.
+        if(!isset($this->params['language'])) {
+            $this->redirect('/'.$this->LanguageGuess->guess());
+        }
 
         //Check if one came through, and its on the list.
         if( isset($this->params['language']) && in_array($this->params['language'], $this->languages) ) {
