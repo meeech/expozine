@@ -2,3 +2,4 @@ config/core.php
 config/database.php
 webroot/index.php
 tmp/*
+_local

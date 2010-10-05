@@ -7,6 +7,7 @@
 <br>
 <!-- Other historical pages-->
 <ul>
+    <li><a href="<?php echo $lang ?>/awards-2009"><?php __d('nav','Awards'); ?> - 2009</a></li> 
     <li><a href="<?php echo $lang ?>/2009">2009</a></li> 
     <li><a href="<?php echo $lang ?>/awards-2008"><?php __d('nav','Awards'); ?> - 2008</a></li> 
     <li><a href="<?php echo $lang ?>/2008">2008</a></li> 
