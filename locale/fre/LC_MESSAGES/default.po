@@ -90,3 +90,5 @@ msgstr "Oui"
 msgid "No"
 msgstr "Non"
 
+msgid "This year's sponsors"
+msgstr "Commanditaires cette année"

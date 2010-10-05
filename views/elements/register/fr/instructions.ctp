@@ -1,9 +1,6 @@
 <h2>FORMULAIRE D&#x27;ENREGISTREMENT</h2>
-
-<p>SVP remplir ce formulaire si vous voulez une place sur la liste	d'attente pour une table à Expozine. On vais vous contacter par courriel mardi, le 10 novembre pour vous dire si on a une table de libre pour vous.</p>
-
-<p>Prenez note qu&#x27;Expozine est r&eacute;serv&eacute; aux exposants pr&eacute;sentant des oeuvres litt&eacute;raires (fanzines, livres, bds) ou des &oelig;uvres ayant un lien avec l&#x27;art imprim&eacute;. Il ne nous est pas possible de r&eacute;server des places pour les artistes vendant des v&ecirc;tements, produits artisanaux, musique, films, etc. Nous avons malheureusement un nombre de table tr&egrave;s limit&eacute;, et plusieurs autres excellents salons sont ouverts &agrave; ces artistes &agrave; Montr&eacute;al.</p>
-
-<p>Les frais d&#x27;inscription sont de 20$ pour une journ&eacute;e seulement, ou de 35$ pour les deux jours. Le tout est payable &agrave; votre arriv&eacute;e lors de l&#x27;&eacute;v&eacute;nement ou &agrave; l&#x27;avance par ch&egrave;que &agrave; l&#x27;ordre de : Arcmtl. Il suffit de poster votre ch&egrave;que &agrave; l&#x27;adresse suivante avec votre formulaire :</p>
-
-<p>Arcmtl, C.P. 1232, Place d&#x27;Armes, Montr&eacute;al, Qu&eacute;bec, H2Y 3K2</p>
+<p>Si vous désirez vous inscrire comme commanditaire, SVP contactez-nous par courriel à <a href="mailto:&#x65;&#x78;&#x70;&#x6F;&#x7A;&#x69;&#x6E;&#x65;&#x40;&#x61;&#x72;&#x63;&#x68;&#x69;&#x76;&#x65;&#x6D;&#x6F;&#x6E;&#x74;&#x72;&#x65;&#x61;&#x6C;&#x2E;&#x6F;&#x72;&#x67;">expozine@archivemontreal.org</a> pour en savoir plus. Nous pourrons vous offrir une visibilité avantageuse à travers nos différentes communications et vous réserver une table plus large selon vos besoins.</p>
+<p><strong>Prenez note qu’Expozine est RÉSERVÉ AUX EXPOSANTS PRÉSENTANT DES PUBLICATIONS</strong> ( oeuvres littéraires, fanzines, livres, bd etc.). Il ne nous est pas possible de réserver des places pour ceux qui vend des vêtements, art visuel, produits artisanaux, musique, films, etc. peu importe sa nature. Nous avons malheureusement un nombre de tables très limité, et plusieurs autres excellents foires artisanaux se tient à Montréal.</p>
+<h3>LES FORMULAIRES DOIVENT ÊTRE SOUMIS AVANT LE 1 NOVEMBRE 2010.</h3>
+<p>Les frais d’inscription sont de 20$ pour une journée seulement, ou de 35$ pour les deux jours. Le tout est payable à votre arrivée lors de l’événement ou à l’avance par chèque à l’ordre de : ARCMTL. Il suffit de poster votre chèque à l’adresse suivante avec votre formulaire :</p>
+<p>ARCMTL, C.P. 55052, 221 Fairmount, Montréal, Québec H2T 2M0</p>
