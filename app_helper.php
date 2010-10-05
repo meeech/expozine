@@ -33,4 +33,36 @@ App::import('Helper', 'Helper', false);
  * @subpackage    cake.cake
  */
 class AppHelper extends Helper {
+
+        /**
+         * Returns the current browsing language. Usually just looks up in $this->params[language]
+         * We dont take the option of setting a lang property in the constructor, 
+         * since we don't have access to this params yet. 
+         * So, this gives helpers a when needed get language call.
+         *
+         * @return string
+         **/
+        function _getLang() {
+            if(isset($this->params) && isset($this->params['language'])) {
+                return $this->params['language'];
+            }
+            return 'en';
+        }
+
+    	/**
+    	 * languageuage-aware URL generation.
+    	 * 
+    	 * @todo Generate unit tests.
+    	 *
+    	 * @param string $url Router::url compatible string|array, with additional 'language' parameter possible. 
+    	 * @param string $full If true, absolute URL is generated instead of relative
+    	 * @return string URL
+    	 * @access public
+    	 */
+    	public function url($url = null, $full = false) {
+    		if (!isset($url['language'])) {
+                $url['language'] = self::_getLang();
+    		}
+    		return parent::url($url, $full);
+    	}
 }
