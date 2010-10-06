@@ -7,6 +7,8 @@
  * 2 choices - either refactor the upload behavior, which isn't that well written in the first place :) (my bad!)
  * or write this upload component to encaps the logic. 
  *
+ * Remember - Make sure your forms are set to array('type'=>'file')
+ *
  * @package default
  * @require Cake Core File class
  * @author Mitchell Amihod
@@ -43,8 +45,6 @@ class UploadComponent extends Object {
             'destination' => 'img' //Default to the webroot/img folder.
         );
         $options = array_merge($defaults, $options);
-        // debug($options);
-        // debug($item);
         $uploadField = $options['uploadField'];
         $realField = $options['realField'];
         $destination = WWW_ROOT . $options['destination'];
@@ -56,6 +56,7 @@ class UploadComponent extends Object {
         }
 
         $upload = $item[$uploadField];
+
         //First Condition: No File uploaded
         //So, we return the realField value
         if(UPLOAD_ERR_NO_FILE === $upload['error']) {

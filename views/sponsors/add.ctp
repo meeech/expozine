@@ -1,5 +1,5 @@
 <div class="sponsors form">
-<?php echo $this->Form->create('Sponsor');?>
+<?php echo $this->Form->create('Sponsor',array('type'=>'file'));?>
 	<fieldset>
  		<legend><?php __('Add Sponsor'); ?></legend>
 	<?php
