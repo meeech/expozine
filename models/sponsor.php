@@ -1,6 +1,7 @@
 <?php
 class Sponsor extends AppModel {
 	var $name = 'Sponsor';
+    var $order = 'title ASC';
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 	var $hasAndBelongsToMany = array(
@@ -20,6 +21,9 @@ class Sponsor extends AppModel {
 			'insertQuery' => ''
 		)
 	);
+	
+	//Treat them differently. 
+	var $imageFields = array('image_en','image_fr');
 
 }
 ?>

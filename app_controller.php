@@ -32,7 +32,9 @@
  */
 class AppController extends Controller {
 
-    var $components = array('Auth','Session', 'Security', 'DebugKit.Toolbar', 'LanguageGuess');
+    var $components = array('Auth','Session', 
+    'Security'=>array('disabledFields'=>array('Sponsor.image_en_file','Sponsor.image_fr_file')),
+     'DebugKit.Toolbar', 'LanguageGuess');
 
 	/**
 	 * Available languages

@@ -5,8 +5,10 @@
 	<?php
 		echo $this->Form->input('title');
 		echo $this->Form->input('web');
-		echo $this->Form->input('image_en');
-		echo $this->Form->input('image_fr');
+		echo $form->input('image_en_file', array('type'=>'file'));
+        echo $form->input('image_en', array('type'=>'hidden'));
+		echo $form->input('image_fr_file', array('type'=>'file'));
+        echo $form->input('image_fr', array('type'=>'hidden'));
 		echo $this->Form->input('Year');
 	?>
 	</fieldset>
