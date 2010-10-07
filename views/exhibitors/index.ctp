@@ -3,18 +3,18 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
         <th><?php echo $this->Paginator->sort('verified');?></th>
-    	<th><?php echo $this->Paginator->sort('year_id');?></th>
+        <!-- <th><?php echo $this->Paginator->sort('year_id');?></th> -->
         <th><?php echo $this->Paginator->sort('title');?></th>
         <th><?php echo $this->Paginator->sort('contact');?></th>
         <th><?php echo $this->Paginator->sort('phone');?></th>
         <th><?php echo $this->Paginator->sort('email');?></th>
-        <th><?php echo $this->Paginator->sort('address');?></th>
+        <!-- <th><?php echo $this->Paginator->sort('address');?></th>
         <th><?php echo $this->Paginator->sort('city');?></th>
         <th><?php echo $this->Paginator->sort('province');?></th>
         <th><?php echo $this->Paginator->sort('postal');?></th>
         <th><?php echo $this->Paginator->sort('web');?></th>
         <th><?php echo $this->Paginator->sort('publish_address');?></th>
-        <th><?php echo $this->Paginator->sort('publish_web');?></th>
+        <th><?php echo $this->Paginator->sort('publish_web');?></th> -->
         <th><?php echo $this->Paginator->sort('days');?></th>
         <th><?php echo $this->Paginator->sort('created');?></th>
         <th><?php echo $this->Paginator->sort('lang');?></th>
@@ -29,21 +29,23 @@
 		}
 	?>
 	<tr<?php echo $class;?>>
-	    <td><?php echo ($exhibitor['Exhibitor']['verified']) ? 'Yes' : 'No'; ?></td>
-		<td>
-        	<?php echo $this->Html->link($exhibitor['Year']['year'], array('controller' => 'years', 'action' => 'view', $exhibitor['Year']['id'])); ?>
-        </td>
+	    <td class="<?php echo ($exhibitor['Exhibitor']['verified']) ? 'yes' : 'no'; ?>">
+	        <?php echo ($exhibitor['Exhibitor']['verified']) ? 'Yes' : 'No'; ?>
+	    </td>
+        <!-- <td>
+            <?php echo $this->Html->link($exhibitor['Year']['year'], array('controller' => 'years', 'action' => 'view', $exhibitor['Year']['id'])); ?>
+        </td> -->
 		<td><?php echo $exhibitor['Exhibitor']['title']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['contact']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['phone']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['email']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['address']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['city']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['province']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['postal']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['web']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['publish_address']; ?>&nbsp;</td>
-		<td><?php echo $exhibitor['Exhibitor']['publish_web']; ?>&nbsp;</td>
+        <!-- <td><?php echo $exhibitor['Exhibitor']['address']; ?>&nbsp;</td>
+        <td><?php echo $exhibitor['Exhibitor']['city']; ?>&nbsp;</td>
+        <td><?php echo $exhibitor['Exhibitor']['province']; ?>&nbsp;</td>
+        <td><?php echo $exhibitor['Exhibitor']['postal']; ?>&nbsp;</td>
+        <td><?php echo $exhibitor['Exhibitor']['web']; ?>&nbsp;</td>
+        <td><?php echo $exhibitor['Exhibitor']['publish_address']; ?>&nbsp;</td>
+        <td><?php echo $exhibitor['Exhibitor']['publish_web']; ?>&nbsp;</td> -->
 		<td><?php echo $exhibitor['Exhibitor']['days']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['created']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['lang']; ?>&nbsp;</td>
