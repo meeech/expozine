@@ -5,6 +5,15 @@ class UsersController extends AppController {
     var $scaffold;
 
     /**
+     * Dashboard after login
+     *
+     * @return void
+     **/
+    function dashboard() {
+        
+    }
+
+    /**
      *  The AuthComponent provides the needed functionality
      *  for login, so you can leave this function blank.
      */
