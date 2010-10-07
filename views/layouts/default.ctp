@@ -25,6 +25,16 @@
         'title_for_layout'=> $title_for_layout
     )); ?>
 	<?php echo $this->Html->css('cake.generic'); ?>
+<style type="text/css" media="screen">
+#header div.actions {
+    width: 100%;
+}
+
+#header div.actions ul li {
+    display: inline-block;
+    width: 200px;
+}
+</style>
 </head>
 <body>
 	<div id="container">
@@ -32,7 +42,20 @@
 			<h1><a href="<?php echo $this->Html->url('/',true).$lang ?>"><?php __('Expozine')?></a></h1>
             <?php if ($this->Session->read('Auth.User')): ?>                
 			<div class="actions">
-			    <ul><li><a href="<?php echo $this->Html->url(array('controller'=>'users', 'action'=>'logout', 'language'=>$lang),true) ?>"><?php __('Logout')?></a></li></ul>
+			    <ul>
+                    <li>
+                        <a href="<?php echo $this->Html->url(array('controller'=>'exhibitors', 'action'=>'index', 'language'=>$lang),true) ?>">
+                            <?php __('Exhibitors')?>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->Html->url(array('controller'=>'sponsors', 'action'=>'index', 'language'=>$lang),true) ?>">
+                            <?php __('Sponsors')?>
+                        </a>
+                    </li>
+
+			        <li><a href="<?php echo $this->Html->url(array('controller'=>'users', 'action'=>'logout', 'language'=>$lang),true) ?>"><?php __('Logout')?></a></li>
+			    </ul>
 			</div>
             <?php endif ?>
 		</div>

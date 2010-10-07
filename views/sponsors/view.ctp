@@ -35,8 +35,6 @@
 		<li><?php echo $this->Html->link(__('Delete Sponsor', true), array('action' => 'delete', $sponsor['Sponsor']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $sponsor['Sponsor']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Sponsors', true), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Sponsor', true), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Years', true), array('controller' => 'years', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Year', true), array('controller' => 'years', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">

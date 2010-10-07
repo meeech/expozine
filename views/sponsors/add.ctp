@@ -17,9 +17,6 @@
 <div class="actions">
 	<h3><?php __('Actions'); ?></h3>
 	<ul>
-
 		<li><?php echo $this->Html->link(__('List Sponsors', true), array('action' => 'index'));?></li>
-		<li><?php echo $this->Html->link(__('List Years', true), array('controller' => 'years', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Year', true), array('controller' => 'years', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

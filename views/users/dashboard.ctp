@@ -1,4 +1,1 @@
-<div class="actions">
-    <ul>
-    </ul>
-</div>
+<p>Hi.</p>

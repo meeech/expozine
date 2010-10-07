@@ -2,7 +2,6 @@
 	<h2><?php __('Sponsors');?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('title');?></th>
 			<th><?php echo $this->Paginator->sort('web');?></th>
 			<th><?php echo $this->Paginator->sort('image_en');?></th>
@@ -18,7 +17,6 @@
 		}
 	?>
 	<tr<?php echo $class;?>>
-		<td><?php echo $sponsor['Sponsor']['id']; ?>&nbsp;</td>
 		<td><?php echo $sponsor['Sponsor']['title']; ?>&nbsp;</td>
 		<td><?php echo $sponsor['Sponsor']['web']; ?>&nbsp;</td>
 		<td><?php echo $sponsor['Sponsor']['image_en']; ?>&nbsp;</td>
@@ -49,7 +47,5 @@
 	<h3><?php __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Sponsor', true), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Years', true), array('controller' => 'years', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Year', true), array('controller' => 'years', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
