@@ -18,19 +18,28 @@ class SponsorsController extends AppController {
 		$this->set('sponsor', $this->Sponsor->read(null, $id));
 	}
 
+    /**
+     * Used to process uploads from add and edit
+     *
+     * @return void
+     **/
+    function _processUploads() {
+        foreach ($this->Sponsor->imageFields as $imageFieldName) {
+             $this->data['Sponsor'][$imageFieldName] = $this->Upload->process($this->data['Sponsor'], array(
+                 'destination'=>'img/sponsors/'.$this->data['Sponsor']['id'].'/',
+                 'uploadField' => $imageFieldName.'_file',
+                 'realField'=>$imageFieldName
+            ));
+        }
+    }
+
 	function add() {
 
 		if (!empty($this->data)) {
 			$this->Sponsor->create();
             $this->data['Sponsor']['id'] = String::uuid();
 
-            foreach ($this->Sponsor->imageFields as $imageFieldName) {
-                 $this->data['Sponsor'][$imageFieldName] = $this->Upload->process($this->data['Sponsor'], array(
-                     'destination'=>'img/sponsors/'.$this->data['Sponsor']['id'].'/',
-                     'uploadField' => $imageFieldName.'_file',
-                     'realField'=>$imageFieldName
-                ));
-            }
+            $this->_processUploads();
 
 			if ($this->Sponsor->save($this->data)) {
 				$this->Session->setFlash(__('The sponsor has been saved', true));
@@ -48,16 +57,11 @@ class SponsorsController extends AppController {
 			$this->Session->setFlash(__('Invalid sponsor', true));
 			$this->redirect(array('action' => 'index'));
 		}
+
 		if (!empty($this->data)) {
 
-            // foreach ($this->Sponsor->imageFields as $imageFieldName) {
-            //     $imageName = $this->Upload->process($this->data['Sponsor'], array('destination'=>'img/sponsors/'.$this->data['Sponsor']['id'].'/'));
-            //                 if($imageName) {
-            //                     $this->data['Sponsor'][$imageFieldName] = $imageName;
-            //                 }
-            // }
-		    
-		    
+            $this->_processUploads();
+
 			if ($this->Sponsor->save($this->data)) {
 				$this->Session->setFlash(__('The sponsor has been saved', true));
 				$this->redirect(array('language'=>$this->requestLanguage, 'controller'=>'sponsors', 'action' => 'index'));
