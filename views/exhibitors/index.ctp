@@ -3,6 +3,7 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
         <th><?php echo $this->Paginator->sort('verified');?></th>
+
         <!-- <th><?php echo $this->Paginator->sort('year_id');?></th> -->
         <th><?php echo $this->Paginator->sort('title');?></th>
         <th><?php echo $this->Paginator->sort('contact');?></th>
@@ -16,6 +17,7 @@
         <th><?php echo $this->Paginator->sort('publish_address');?></th>
         <th><?php echo $this->Paginator->sort('publish_web');?></th> -->
         <th><?php echo $this->Paginator->sort('days');?></th>
+        <th><?php echo $this->Paginator->sort('confirmation_email');?></th>
         <th><?php echo $this->Paginator->sort('created');?></th>
         <th><?php echo $this->Paginator->sort('lang');?></th>
         <th class="actions"><?php __('Actions');?></th>
@@ -47,6 +49,9 @@
         <td><?php echo $exhibitor['Exhibitor']['publish_address']; ?>&nbsp;</td>
         <td><?php echo $exhibitor['Exhibitor']['publish_web']; ?>&nbsp;</td> -->
 		<td><?php echo $exhibitor['Exhibitor']['days']; ?>&nbsp;</td>
+	    <td class="<?php echo ($exhibitor['Exhibitor']['confirmation_email']) ? 'yes' : 'no'; ?>">
+	        <?php echo ($exhibitor['Exhibitor']['confirmation_email']) ? 'Yes' : 'No'; ?>
+	    </td>		
 		<td><?php echo $exhibitor['Exhibitor']['created']; ?>&nbsp;</td>
 		<td><?php echo $exhibitor['Exhibitor']['lang']; ?>&nbsp;</td>
 		<td class="actions">
