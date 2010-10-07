@@ -6,6 +6,8 @@
 		echo $this->Form->input('id');
 		echo $this->Form->input('year_id');
 		echo $this->Form->input('verified');
+		echo $this->Form->submit(__('Submit', true));
+        
 		echo $this->Form->input('title');
 		echo $this->Form->input('contact');
 		echo $this->Form->input('phone');
