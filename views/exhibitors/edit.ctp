@@ -5,6 +5,7 @@
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('year_id');
+		echo $this->Form->input('verified');
 		echo $this->Form->input('title');
 		echo $this->Form->input('contact');
 		echo $this->Form->input('phone');
@@ -16,13 +17,17 @@
 		echo $this->Form->input('web');
 		echo $this->Form->input('publish_address');
 		echo $this->Form->input('publish_web');
-		echo $this->Form->input('verified');
-		echo $this->Form->input('days');
+        // echo $this->Form->input('confirmation_email', array('label'=>'Confirmation email sent?'));
+		echo $this->Form->input('days', array(
+		    'options' => array('sat'=>__('Saturday',true).' ($20)','sun'=>__('Sunday',true).' ($20)','both'=>__('Saturday &amp; Sunday',true).' ($35)'),
+		    'type' => 'radio'
+        ));
+
 		echo $this->Form->input('catlivres');
-		echo $this->Form->input('cataffiche');
+		echo $this->Form->input('cataffiche', array('label'=>'Catposter'));
 		echo $this->Form->input('catautre');
-		echo $this->Form->input('lang');
-		echo $this->Form->input('twitter');
+        // echo $this->Form->input('lang');
+        // echo $this->Form->input('twitter');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

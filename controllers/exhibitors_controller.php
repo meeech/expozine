@@ -15,7 +15,11 @@ class ExhibitorsController extends AppController {
 
 	function index() {
 		$this->Exhibitor->recursive = 0;
+  
 		$this->set('exhibitors', $this->paginate());
+		
+		$this->Session->write('last.Exhibitor', $this->passedArgs);
+
 	}
 
     /**
@@ -62,7 +66,7 @@ class ExhibitorsController extends AppController {
 	function view($id = null) {
 		if (!$id) {
 			$this->Session->setFlash(__('Invalid exhibitor', true));
-			$this->redirect(array('action' => 'index'));
+			$this->redirect(array('controller'=> 'exhibitors', 'action' => 'index', 'language'=>$this->requestLanguage));
 		}
 		$this->set('exhibitor', $this->Exhibitor->read(null, $id));
 	}
@@ -72,7 +76,7 @@ class ExhibitorsController extends AppController {
 			$this->Exhibitor->create();
 			if ($this->Exhibitor->save($this->data)) {
 				$this->Session->setFlash(__('The exhibitor has been saved', true));
-				$this->redirect(array('action' => 'index'));
+				$this->redirect(array('controller'=> 'exhibitors', 'action' => 'index', 'language'=>$this->requestLanguage));
 			} else {
 				$this->Session->setFlash(__('The exhibitor could not be saved. Please, try again.', true));
 			}
@@ -89,7 +93,12 @@ class ExhibitorsController extends AppController {
 		if (!empty($this->data)) {
 			if ($this->Exhibitor->save($this->data)) {
 				$this->Session->setFlash(__('The exhibitor has been saved', true));
-				$this->redirect(array('action' => 'index'));
+				$redir = array('controller'=> 'exhibitors', 'action' => 'index', 'language'=>$this->requestLanguage);
+                if($this->Session->read('last.Exhibitor')) {
+                    $redir = $redir+$this->Session->read('last.Exhibitor');
+                }
+
+				$this->redirect($redir);
 			} else {
 				$this->Session->setFlash(__('The exhibitor could not be saved. Please, try again.', true));
 			}
@@ -108,9 +117,9 @@ class ExhibitorsController extends AppController {
 		}
 		if ($this->Exhibitor->delete($id)) {
 			$this->Session->setFlash(__('Exhibitor deleted', true));
-			$this->redirect(array('action'=>'index'));
+			$this->redirect(array('controller'=> 'exhibitors', 'action' => 'index', 'language'=>$this->requestLanguage));
 		}
 		$this->Session->setFlash(__('Exhibitor was not deleted', true));
-		$this->redirect(array('action' => 'index'));
+		$this->redirect(array('controller'=> 'exhibitors', 'action' => 'index', 'language'=>$this->requestLanguage));
 	}
 }

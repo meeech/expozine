@@ -274,3 +274,13 @@ p.error em {
 	background: green;
 	color: #fff;
 }
+
+.yes {
+    border: 1px solid #aaa;
+    background-color: #209940;
+}
+
+.no {
+    border: 1px solid #aaa;
+    background-color: #C3A51C;
+}

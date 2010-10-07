@@ -25,8 +25,8 @@
 		echo $this->Form->input('catlivres');
 		echo $this->Form->input('cataffiche');
 		echo $this->Form->input('catautre');
-		echo $this->Form->input('lang');
-		echo $this->Form->input('twitter');
+		echo $this->Form->input('lang', array('options'=>array('en'=>'English', 'fr'=>'French')));
+        // echo $this->Form->input('twitter');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

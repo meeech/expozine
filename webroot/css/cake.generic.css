@@ -533,3 +533,13 @@ div.code-coverage-results span.result-ok {
 div.code-coverage-results span.result-good {
 	color: #0a0;
 }
+
+.yes {
+    border: 1px solid #aaa !important;
+    background-color: #209940 !important;
+}
+
+.no {
+    border: 1px solid #aaa !important;
+    background-color: #C3A51C !important;
+}
