@@ -1,3 +1,6 @@
+<?php if (!empty($exhibitors)): ?>
+    <h2><?php __("This year's exhibitors"); ?></h2>
+<?php endif ?>
 <ul class="exhibitors">
     <?php 
     foreach ($exhibitors as $exhib):

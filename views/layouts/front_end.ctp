@@ -36,7 +36,6 @@
     <div class="yui3-u-1">
         <div class="content">
             <a name="exhibitors"></a>
-            <h2><?php __("This year's exhibitors"); ?></h2>
             <?php 
             echo $this->element('exhibitor/list', array('exhibitors'=> $this->requestAction("/{$lang}/exhibitors/all") )); 
             ?>
