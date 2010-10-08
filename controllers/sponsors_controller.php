@@ -40,7 +40,24 @@ class SponsorsController extends AppController {
      * @return void
      **/
     function import_images() {
+        $this->layout = false;
+        $this->autoRender = false;
         
+        $sponsors = $this->Sponsor->find('all');
+        
+        foreach ($sponsors as $sponsor) {
+            // debug($sponsor);
+            $oldFile = WWW_ROOT."img/sponsors2007/{$sponsor['Sponsor']['image_en']}";
+            if(file_exists($oldFile)) {
+                $newDir = WWW_ROOT."img/sponsors/{$sponsor['Sponsor']['id']}/";
+                $newFile = $newDir.$sponsor['Sponsor']['image_en'];
+                mkdir($newDir);
+                copy($oldFile, $newFile);
+            } 
+            else {
+                echo '*****';
+            }
+        }
     }
 
     /**
