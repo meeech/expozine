@@ -3,7 +3,7 @@ class SponsorsController extends AppController {
 
 	var $name = 'Sponsors';
 
-    var $components = array('Upload','Tidize');
+    var $components = array('Upload');
 
 	function index() {
 		$this->Sponsor->recursive = 0;
@@ -20,44 +20,29 @@ class SponsorsController extends AppController {
 
 
     /**
-     * Run through all models, generate a TID
-     *
-     * @return void
-     **/
-    function generate_tid() {
-        $this->layout = false;
-        $this->autoRender = false;
-        
-        echo "TIDize Sponsor <br>";
-        $this->Tidize->tidize('Sponsor');
-        echo 'Done';
-    }
-
-
-    /**
      * Go through images
      *
      * @return void
      **/
     function import_images() {
-        $this->layout = false;
-        $this->autoRender = false;
-        
-        $sponsors = $this->Sponsor->find('all');
-        
-        foreach ($sponsors as $sponsor) {
-            // debug($sponsor);
-            $oldFile = WWW_ROOT."img/sponsors2007/{$sponsor['Sponsor']['image_en']}";
-            if(file_exists($oldFile)) {
-                $newDir = WWW_ROOT."img/sponsors/{$sponsor['Sponsor']['id']}/";
-                $newFile = $newDir.$sponsor['Sponsor']['image_en'];
-                mkdir($newDir);
-                copy($oldFile, $newFile);
-            } 
-            else {
-                echo '*****';
-            }
-        }
+        // $this->layout = false;
+        // $this->autoRender = false;
+        // 
+        // $sponsors = $this->Sponsor->find('all');
+        // 
+        // foreach ($sponsors as $sponsor) {
+        //     // debug($sponsor);
+        //     $oldFile = WWW_ROOT."img/sponsors2007/{$sponsor['Sponsor']['image_en']}";
+        //     if(file_exists($oldFile)) {
+        //         $newDir = WWW_ROOT."img/sponsors/{$sponsor['Sponsor']['id']}/";
+        //         $newFile = $newDir.$sponsor['Sponsor']['image_en'];
+        //         mkdir($newDir);
+        //         copy($oldFile, $newFile);
+        //     } 
+        //     else {
+        //         echo '*****';
+        //     }
+        // }
     }
 
     /**
