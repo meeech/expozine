@@ -6,6 +6,8 @@ class ExhibitorsController extends AppController {
 
     var $components = array('Email');
 
+    var $paginate = array('limit'=>100);
+
     /**
      * undocumented function
      *
@@ -112,7 +114,7 @@ class ExhibitorsController extends AppController {
                     $redir = $redir+$this->Session->read('last.Exhibitor');
                 }
 
-                //$this->sendConfirmationEmail($this->Exhibitor->read());
+                $this->sendConfirmationEmail($this->Exhibitor->read());
 
 				$this->redirect($redir);
 			} else {
