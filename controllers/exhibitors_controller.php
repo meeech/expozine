@@ -110,6 +110,8 @@ class ExhibitorsController extends AppController {
                     $redir = $redir+$this->Session->read('last.Exhibitor');
                 }
 
+                $this->sendConfirmationEmail($this->data);
+
 				$this->redirect($redir);
 			} else {
 				$this->Session->setFlash(__('The exhibitor could not be saved. Please, try again.', true));
@@ -121,6 +123,45 @@ class ExhibitorsController extends AppController {
 		$years = $this->Exhibitor->Year->find('list');
 		$this->set(compact('years'));
 	}
+
+
+    /**
+     * Call to tear through list and send emails
+     *
+     * @return void
+     **/
+    function sendAllConfirmationEmails() {
+        $this->autoRender = false;
+
+        $exhibitors = $this->Exhibitor->find('all', array(
+            'recursive'=>-1, 
+            'conditions'=>array('confirmation_email' => 0, 'verified'=>1)
+        ));
+
+        foreach ($exhibitors as $exhibitor) {
+            $this->sendConfirmationEmail($exhibitor);
+        }
+    }
+
+    /**
+     * Check if the exhibitor should receive the confirmation email
+     * based on verified status, whether its been sent already.
+     *
+     * @param array exhibitor data
+     * @return bool
+     **/
+    function sendConfirmationEmail($exhibitor) {
+        //Not verified, or confirmation email already sent, then dont do anything.
+        if(!(bool)$exhibitor['Exhibitor']['verified'] || (bool)$exhibitor['Exhibitor']['confirmation_email']) {
+            return true;
+        }
+
+        // debug('sending email');
+
+        $this->Exhibitor->id = $exhibitor['Exhibitor']['id'];
+        $this->Exhibitor->saveField('confirmation_email', true);
+        
+    }
 
 	function delete($id = null) {
 		if (!$id) {
