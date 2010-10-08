@@ -4,6 +4,8 @@ class ExhibitorsController extends AppController {
 
 	var $name = 'Exhibitors';
 
+    var $components = array('Email');
+
     /**
      * undocumented function
      *
@@ -110,7 +112,7 @@ class ExhibitorsController extends AppController {
                     $redir = $redir+$this->Session->read('last.Exhibitor');
                 }
 
-                $this->sendConfirmationEmail($this->data);
+                $this->sendConfirmationEmail($this->Exhibitor->read());
 
 				$this->redirect($redir);
 			} else {
@@ -122,6 +124,20 @@ class ExhibitorsController extends AppController {
 		}
 		$years = $this->Exhibitor->Year->find('list');
 		$this->set(compact('years'));
+	}
+
+
+	function delete($id = null) {
+		if (!$id) {
+			$this->Session->setFlash(__('Invalid id for exhibitor', true));
+			$this->redirect(array('action'=>'index'));
+		}
+		if ($this->Exhibitor->delete($id)) {
+			$this->Session->setFlash(__('Exhibitor deleted', true));
+			$this->redirect(array('controller'=> 'exhibitors', 'action' => 'index', 'language'=>$this->requestLanguage));
+		}
+		$this->Session->setFlash(__('Exhibitor was not deleted', true));
+		$this->redirect(array('controller'=> 'exhibitors', 'action' => 'index', 'language'=>$this->requestLanguage));
 	}
 
 
@@ -151,28 +167,45 @@ class ExhibitorsController extends AppController {
      * @return bool
      **/
     function sendConfirmationEmail($exhibitor) {
+        
+        // $exhibitor = $this->Exhibitor->read
         //Not verified, or confirmation email already sent, then dont do anything.
         if(!(bool)$exhibitor['Exhibitor']['verified'] || (bool)$exhibitor['Exhibitor']['confirmation_email']) {
             return true;
         }
 
-        // debug('sending email');
+        // to   Address the message is going to (string). Separate the addresses with a comma if you want to send the email to more than one recipient.
+        // cc   array of addresses to cc the message to
+        // bcc  array of addresses to bcc (blind carbon copy) the message to
+        // replyTo  reply to address (string)
+        // return   Return mail address that will be used in case of any errors(string) (for mail-daemon/errors)
+        // from from address (string)
+        // subject  subject for the message (string)
+        // template The email element to use for the message (located in app/views/elements/email/html/ and app/views/elements/email/text/)
+        // layout   The layout used for the email (located in app/views/layouts/email/html/ and app/views/layouts/email/text/)
+        // lineLength   Length at which lines should be wrapped. Defaults to 70. (integer)
+        // sendAs   how do you want message sent string values of text, html or both
+        // attachments  array of files to send (absolute and relative paths)
+        // delivery how to send the message (mail, smtp [would require smtpOptions set below] and debug)
+        // smtpOptions  a
+        // 
 
+        $this->Email->reset();
+
+        $this->Email->to = $exhibitor['Exhibitor']['contact'] . ' <' . $exhibitor['Exhibitor']['email'] . '>';
+        $this->Email->from = 'Expozine <expozine@archivemontreal.org>';
+        $this->Email->replyTo = 'Expozine <expozine@archivemontreal.org>';
+        $this->Email->return = 'Expozine <expozine@archivemontreal.org>';
+
+        $this->Email->subject = __d('email', 'subject_confirmation', true);
+        $this->Email->template = $this->requestLanguage.'/confirmation';
+        $this->Email->sendAs = 'html';
+        $this->Email->send();
+        
         $this->Exhibitor->id = $exhibitor['Exhibitor']['id'];
         $this->Exhibitor->saveField('confirmation_email', true);
+
+        $this->set('exhibitor', $this->Exhibitor->read());
         
     }
-
-	function delete($id = null) {
-		if (!$id) {
-			$this->Session->setFlash(__('Invalid id for exhibitor', true));
-			$this->redirect(array('action'=>'index'));
-		}
-		if ($this->Exhibitor->delete($id)) {
-			$this->Session->setFlash(__('Exhibitor deleted', true));
-			$this->redirect(array('controller'=> 'exhibitors', 'action' => 'index', 'language'=>$this->requestLanguage));
-		}
-		$this->Session->setFlash(__('Exhibitor was not deleted', true));
-		$this->redirect(array('controller'=> 'exhibitors', 'action' => 'index', 'language'=>$this->requestLanguage));
-	}
 }
