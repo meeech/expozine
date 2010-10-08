@@ -3,7 +3,7 @@ class SponsorsController extends AppController {
 
 	var $name = 'Sponsors';
 
-    var $components = array('Upload');
+    var $components = array('Upload','Tidize');
 
 	function index() {
 		$this->Sponsor->recursive = 0;
@@ -17,6 +17,31 @@ class SponsorsController extends AppController {
 		}
 		$this->set('sponsor', $this->Sponsor->read(null, $id));
 	}
+
+
+    /**
+     * Run through all models, generate a TID
+     *
+     * @return void
+     **/
+    function generate_tid() {
+        $this->layout = false;
+        $this->autoRender = false;
+        
+        echo "TIDize Sponsor <br>";
+        $this->Tidize->tidize('Sponsor');
+        echo 'Done';
+    }
+
+
+    /**
+     * Go through images
+     *
+     * @return void
+     **/
+    function import_images() {
+        
+    }
 
     /**
      * Used to process uploads from add and edit
