@@ -35,6 +35,8 @@
     </div>
     
     <div class="ft yui3-u-1">
+        <a name="sponsors"></a>
+        <h2><?php __("This year's sponsors"); ?></h2>
         <?php 
         echo $this->element('sponsor/list', array('sponsors'=> $this->requestAction("/{$lang}/sponsors/random") )); 
         ?>
