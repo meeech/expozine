@@ -1,6 +1,5 @@
 <ul class="sponsors">    
 <?php
-$sponsors = $this->requestAction("/{$lang}/sponsors/random");
 foreach($sponsors as $sponsor) {
     // extract($sponsor['Sponsor']);
 

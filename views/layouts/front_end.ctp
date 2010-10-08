@@ -35,7 +35,9 @@
     </div>
     
     <div class="ft yui3-u-1">
-        <?php echo $this->element('sponsor/list'); ?>
+        <?php 
+        echo $this->element('sponsor/list', array('sponsors'=> $this->requestAction("/{$lang}/sponsors/random") )); 
+        ?>
     </div>
 </div>
 
