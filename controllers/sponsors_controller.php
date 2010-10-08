@@ -13,6 +13,7 @@ class SponsorsController extends AppController {
 	function index() {
 		$this->Sponsor->recursive = 0;
 		$this->set('sponsors', $this->paginate());
+		$this->Session->write('last.Sponsor', $this->passedArgs);
 	}
 
 	function view($id = null) {
@@ -98,6 +99,12 @@ class SponsorsController extends AppController {
 
 			if ($this->Sponsor->save($this->data)) {
 				$this->Session->setFlash(__('The sponsor has been saved', true));
+
+				$redir = array('controller'=> 'sponsors', 'action' => 'index', 'language'=>$this->requestLanguage);
+                if($this->Session->read('last.Sponsor')) {
+                    $redir = $redir+$this->Session->read('last.Sponsor');
+                }
+
 				$this->redirect(array('language'=>$this->requestLanguage, 'controller'=>'sponsors', 'action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The sponsor could not be saved. Please, try again.', true));
