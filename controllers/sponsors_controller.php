@@ -5,6 +5,11 @@ class SponsorsController extends AppController {
 
     var $components = array('Upload');
 
+    function beforeFilter() {
+        $this->Auth->allow(array('random'));
+        parent::beforeFilter();
+    }
+
 	function index() {
 		$this->Sponsor->recursive = 0;
 		$this->set('sponsors', $this->paginate());
