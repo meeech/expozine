@@ -1,4 +1,5 @@
 <?php
+App::import('Sanitize');
 class ExhibitorsController extends AppController {
 
 	var $name = 'Exhibitors';
@@ -40,6 +41,9 @@ class ExhibitorsController extends AppController {
         $this->layout = 'front_end';
 	    
 		if (!empty($this->data)) {
+		    
+		    $this->data = Sanitize::clean($this->data);
+		    
 			$this->Exhibitor->create();
 			if ($this->Exhibitor->save($this->data)) {
                 // $this->Session->setFlash(__('The exhibitor has been saved', true));
