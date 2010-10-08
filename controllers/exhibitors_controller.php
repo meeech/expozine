@@ -112,7 +112,7 @@ class ExhibitorsController extends AppController {
                     $redir = $redir+$this->Session->read('last.Exhibitor');
                 }
 
-                $this->sendConfirmationEmail($this->Exhibitor->read());
+                //$this->sendConfirmationEmail($this->Exhibitor->read());
 
 				$this->redirect($redir);
 			} else {
