@@ -25,6 +25,25 @@
 </head>
 
 <body>
+<style type="text/css" media="screen">
+.receipt {
+    font-size: 1.2em;
+}
+
+.receipt dl dd {
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    width: 60%; 
+    padding-bottom: 10px;
+}
+.receipt dl dt {
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    width: 30%;
+    padding: 10px 0 5px;
+}
+    
+</style>
 	<?php echo $content_for_layout;?>
 </body>
 </html>

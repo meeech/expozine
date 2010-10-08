@@ -8,4 +8,7 @@
 
 <p>For more information, contact us by email at expozine@archivemontreal.org .</p>
 
-<?php echo $this->element('exhibitor/receipt') ?>
+<p>-THE EXPOZINE TEAM<br>
+www.expozine.ca</p>
+
+<?php echo $this->element('exhibitor/receipt', array('exhibitor'=>$exhibitor)); ?>

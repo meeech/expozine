@@ -174,23 +174,9 @@ class ExhibitorsController extends AppController {
             return true;
         }
 
-        // to   Address the message is going to (string). Separate the addresses with a comma if you want to send the email to more than one recipient.
-        // cc   array of addresses to cc the message to
-        // bcc  array of addresses to bcc (blind carbon copy) the message to
-        // replyTo  reply to address (string)
-        // return   Return mail address that will be used in case of any errors(string) (for mail-daemon/errors)
-        // from from address (string)
-        // subject  subject for the message (string)
-        // template The email element to use for the message (located in app/views/elements/email/html/ and app/views/elements/email/text/)
-        // layout   The layout used for the email (located in app/views/layouts/email/html/ and app/views/layouts/email/text/)
-        // lineLength   Length at which lines should be wrapped. Defaults to 70. (integer)
-        // sendAs   how do you want message sent string values of text, html or both
-        // attachments  array of files to send (absolute and relative paths)
-        // delivery how to send the message (mail, smtp [would require smtpOptions set below] and debug)
-        // smtpOptions  a
-        // 
-
         $this->Email->reset();
+
+        $this->set('exhibitor', $this->Exhibitor->read());
 
         $this->Email->to = $exhibitor['Exhibitor']['contact'] . ' <' . $exhibitor['Exhibitor']['email'] . '>';
         $this->Email->from = 'Expozine <expozine@archivemontreal.org>';
@@ -198,14 +184,11 @@ class ExhibitorsController extends AppController {
         $this->Email->return = 'Expozine <expozine@archivemontreal.org>';
 
         $this->Email->subject = __d('email', 'subject_confirmation', true);
-        $this->Email->template = $this->requestLanguage.'/confirmation';
+        $this->Email->template = $exhibitor['Exhibitor']['lang'].'/confirmation';
         $this->Email->sendAs = 'html';
-        $this->Email->send();
-        
-        $this->Exhibitor->id = $exhibitor['Exhibitor']['id'];
-        $this->Exhibitor->saveField('confirmation_email', true);
 
-        $this->set('exhibitor', $this->Exhibitor->read());
-        
+        $this->Exhibitor->id = $exhibitor['Exhibitor']['id'];
+        $this->Exhibitor->saveField('confirmation_email', $this->Email->send());
+
     }
 }
