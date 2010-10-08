@@ -5,6 +5,10 @@ body {
     width: 960px;
 }
 
+.content {
+    padding: 0 20px 0 20px;
+}
+
 a {
     color: #4F2700;
     text-decoration: none;
@@ -51,7 +55,7 @@ div.sidebar div.content ul {
 }
 
 div.sidebar div.content {
-    padding-top: 20px;
+    padding: 20px 0 0 0;
 }
 
 div.sidebar div.content ul li{
@@ -71,8 +75,7 @@ a:hover{
 div.bd > div.content {
 /*    border: 1px solid red;*/
     border-right: 1px solid #ccc;
-    margin-right: 10px;
-    padding: 0 20px 0 20px;
+    margin-right: 10px;    
 }
 
 .sponsors {
@@ -288,3 +291,14 @@ p.error em {
 ul.sponsors li {
     list-style: none;
 }
+
+ul.exhibitors li {
+    border-bottom: 1px solid #aaa;
+    padding: 5px;
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    width: 33%;
+}
+

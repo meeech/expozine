@@ -9,7 +9,7 @@ class ExhibitorsController extends AppController {
      * @return void
      **/
     function beforeFilter() {
-        $this->Auth->allow(array('register', 'success'));
+        $this->Auth->allow(array('all', 'register', 'success'));
         parent::beforeFilter();
     }
 
@@ -21,6 +21,14 @@ class ExhibitorsController extends AppController {
 		$this->Session->write('last.Exhibitor', $this->passedArgs);
 
 	}
+
+    function all($limit = false) {
+        return $this->Exhibitor->find('all', array(
+            'order' => 'title ASC', 'limit'=>$limit,
+            'conditions' =>array('verified'=> 1)
+        ));
+    }
+
 
     /**
      * Register controller for exhibitors to sign up. 

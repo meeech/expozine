@@ -33,9 +33,18 @@
             <?php echo $this->element("nav")?>
         </div>
     </div>
+    <div class="yui3-u-1">
+        <div class="content">
+            <a name="exhibitors"></a>
+            <h2><?php __("This year's exhibitors"); ?></h2>
+            <?php 
+            echo $this->element('exhibitor/list', array('exhibitors'=> $this->requestAction("/{$lang}/exhibitors/all") )); 
+            ?>
+        </div>
+    </div>
     
-    <div class="ft yui3-u-1">
-        <div class="sponsors">
+    <div class="yui3-u-1">
+        <div class="content">
             <a name="sponsors"></a>
             <h2><?php __("This year's sponsors"); ?></h2>
             <?php 
