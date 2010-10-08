@@ -97,4 +97,4 @@ msgid "This year's sponsors"
 msgstr "Commanditaires cette année"
 
 msgid "This year's exhibitors"
-msgstr "Voici nos exposants cette année"
+msgstr "Les exposants cette année"
