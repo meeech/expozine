@@ -18,7 +18,9 @@ class SponsorsController extends AppController {
 		$this->set('sponsor', $this->Sponsor->read(null, $id));
 	}
 
-
+    function random($limit = false) {
+        return $this->Sponsor->find('all', array('order' => 'RAND()', 'limit'=>$limit));
+    }
     /**
      * Go through images
      *

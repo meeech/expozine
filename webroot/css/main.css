@@ -284,3 +284,7 @@ p.error em {
     border: 1px solid #aaa;
     background-color: #C3A51C;
 }
+
+ul.sponsors li {
+    list-style: none;
+}

@@ -35,7 +35,7 @@
     </div>
     
     <div class="ft yui3-u-1">
-        <?php echo $this->element('sponsors'); ?>
+        <?php echo $this->element('sponsor/list'); ?>
     </div>
 </div>
 
