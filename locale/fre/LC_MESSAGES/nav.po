@@ -21,4 +21,4 @@ msgid "About"
 msgstr "Historique"
 
 msgid "Register"
-msgstr "Enregistrer"
+msgstr "Enregistrez"

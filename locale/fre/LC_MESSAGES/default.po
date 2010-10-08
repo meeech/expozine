@@ -16,7 +16,7 @@ msgid "Name"
 msgstr "Nom"
 
 msgid "Contact Name"
-msgstr "Personne contacte"
+msgstr "Personne Contact"
 
 msgid "Phone Number"
 msgstr "T&eacute;l&eacute;phone"
