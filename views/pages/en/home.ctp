@@ -1,4 +1,4 @@
-<h2>ANNOUNCING EXPOZINE 2010, <br>MONTREAL’S TENTH ANNUAL SMALL PRESS, COMIC AND ZINE FAIR!</h2>
+<h2>ANNOUNCING EXPOZINE 2010, <br>MONTREAL’S NINTH ANNUAL SMALL PRESS, COMIC AND ZINE FAIR!</h2>
  <p>Expozine, Montreal’s annual small press, comic and zine fair, will take place on Saturday, November 13 and Sunday, November 14, 2010, from 12 p.m. to 6 p.m. at 5035 St-Dominique (Église Saint-Enfant Jésus, Laurier Métro). Free admission.</p>
 <p>This incredible event brings together nearly 300 creators of all kinds of publications– from books to zines to graphic novels – in both English and French. In the past nine years, Expozine has become one of North America's largest small press fairs, attracting thousands of visitors as well as exhibitors from across North America and even Europe!</p>
 <p>Come discover a universe of publications and printed works that is hard to find anywhere, much less all in the same room! It’s also a rare opportunity to meet hundreds of young and emerging authors, publishers and artists, and see what the winners of last year’s Expozine Alternative Press Awards are up to.</p>
