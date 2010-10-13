@@ -82,22 +82,25 @@ class AppController extends Controller {
 	/**
 	 * Just setup variety of lang related stuff. requestLanguage, Config.language
 	 * We can also call this from the app_error functions to init lang / locale
-	 *
+	 * @param null/ string if set to some value, will be used instead of url value. 
+	 *          Useful to reset the lang/locale for things like email to exhibitors based on their settings. 
 	 * @return void
 	 **/
-	function initLanguage() {
+	function initLanguage( $override = null ) {
         //Set default
         $reqLang = reset($this->languages);
 
-        //If there's no lang set, guess.
-        if(!isset($this->params['language'])) {
+        //If there's no lang set & no override, guess.
+        if(!isset($this->params['language']) && !$override) {
             // $this->params['language'] = $this->LanguageGuess->guess();
             $this->redirect('/'.$this->LanguageGuess->guess());
         }
 
+        $lang = ($override) ? $override : $this->params['language'];
+
         //Check if one came through, and its on the list.
-        if( isset($this->params['language']) && in_array($this->params['language'], $this->languages) ) {
-            $reqLang = $this->params['language']; 
+        if( in_array($lang, $this->languages) ) {
+            $reqLang = $lang; 
         }
 
         //And figure out the locale lang. 
