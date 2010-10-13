@@ -169,7 +169,9 @@ class ExhibitorsController extends AppController {
      * @return bool
      **/
     function sendConfirmationEmail($exhibitor) {
-        
+        if(Configure::read('debug') > 0) {
+            return true;
+        } 
         // $exhibitor = $this->Exhibitor->read
         //Not verified, or confirmation email already sent, then dont do anything.
         if(!(bool)$exhibitor['Exhibitor']['verified'] || (bool)$exhibitor['Exhibitor']['confirmation_email']) {
