@@ -98,7 +98,7 @@ class AppController extends Controller {
 
         $lang = ($override) ? $override : $this->params['language'];
 
-        //Check if one came through, and its on the list.
+        //on the list?
         if( in_array($lang, $this->languages) ) {
             $reqLang = $lang; 
         }

@@ -172,7 +172,7 @@ class ExhibitorsController extends AppController {
         if(Configure::read('debug') > 0) {
             return true;
         } 
-        // $exhibitor = $this->Exhibitor->read
+
         //Not verified, or confirmation email already sent, then dont do anything.
         if(!(bool)$exhibitor['Exhibitor']['verified'] || (bool)$exhibitor['Exhibitor']['confirmation_email']) {
             return true;
@@ -182,6 +182,9 @@ class ExhibitorsController extends AppController {
 
         $this->set('exhibitor', $this->Exhibitor->read());
 
+        //Set locale to the exhibitor lang
+        $this->initLanguage($exhibitor['Exhibitor']['lang']);
+        
         $this->Email->to = $exhibitor['Exhibitor']['contact'] . ' <' . $exhibitor['Exhibitor']['email'] . '>';
         $this->Email->from = 'Expozine <expozine@archivemontreal.org>';
         $this->Email->replyTo = 'Expozine <expozine@archivemontreal.org>';
