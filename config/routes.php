@@ -27,6 +27,8 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/views/pages/home.ctp)...
  */
+Router::connect('/:language/csv/*', array('plugin'=>'csver', 'controller'=>'csver', 'action'=>'index'));
+
 Router::connect('/:language/:controller/:action/*');
 Router::connect('/:language/:controller/:action');
 Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
