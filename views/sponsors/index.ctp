@@ -47,5 +47,7 @@
 	<h3><?php __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Sponsor', true), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link('Export CSV', array('controller'=>'csver', 'action'=>'index', 'Sponsor', 'plugin'=>'csver'))?></li>
+
 	</ul>
 </div>
