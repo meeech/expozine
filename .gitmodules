@@ -1,0 +1,3 @@
+[submodule "plugins/csver"]
+	path = plugins/csver
+	url = git://github.com/plank/CSVer.git
