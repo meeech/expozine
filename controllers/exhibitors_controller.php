@@ -184,8 +184,8 @@ class ExhibitorsController extends AppController {
 
         //Set locale to the exhibitor lang
         $this->initLanguage($exhibitor['Exhibitor']['lang']);
-        
-        $this->Email->to = $exhibitor['Exhibitor']['contact'] . ' <' . $exhibitor['Exhibitor']['email'] . '>';
+
+        $this->Email->to =  html_entity_decode($exhibitor['Exhibitor']['contact'], ENT_NOQUOTES, 'UTF-8') . ' <' . $exhibitor['Exhibitor']['email'] . '>';
         $this->Email->from = 'Expozine <expozine@archivemontreal.org>';
         $this->Email->replyTo = 'Expozine <expozine@archivemontreal.org>';
         $this->Email->return = 'Expozine <expozine@archivemontreal.org>';
