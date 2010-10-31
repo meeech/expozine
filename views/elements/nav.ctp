@@ -1,6 +1,6 @@
 <!-- Main Name -->
 <ul>
-    <li><?php echo $this->Html->link(__d('nav', 'Home', true), '/'.$lang ); ?></li>
+    <li><?php echo $this->Html->link(__d('nav', 'Home', true), '/' ); ?></li>
     <!-- <li><?php echo $this->Html->link(__d('nav', 'Register', true), array('controller'=>'exhibitors', 'action'=>'register', 'language'=>$lang) ); ?></li> -->
 </ul>
 <br>
