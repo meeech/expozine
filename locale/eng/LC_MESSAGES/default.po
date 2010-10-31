@@ -20,3 +20,5 @@ msgstr "You have to choose some days."
 msgid "notempty_email"
 msgstr "Please enter a valid e-mail address"
 
+msgid "problem_register"
+msgstr "There seems to be a problem. Please review the form and try again."

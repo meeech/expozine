@@ -59,7 +59,7 @@ class ExhibitorsController extends AppController {
                 $this->Session->write('exhibitor_id', $this->Exhibitor->id);
                 $this->redirect(array('action' => 'success', 'language'=>$this->requestLanguage));
 			} else {
-				$this->Session->setFlash(__('There seems to be a problem. Please review the form and try again.', true));
+				$this->Session->setFlash(__('problem_register', true));
 			}
 		}
 		$years = $this->Exhibitor->Year->find('list');

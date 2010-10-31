@@ -72,6 +72,9 @@ msgstr "Soumettre"
 msgid "Created"
 msgstr "Crée"
 
+msgid "problem_register"
+msgstr "Il semble y a un problème. Veuillez passer en revue la forme et essayez encore."
+
 msgid "notempty_title"
 msgstr "Nom Maison d'édition ou Publication requis"
 
