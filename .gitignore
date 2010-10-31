@@ -4,3 +4,4 @@ webroot/index.php
 tmp/*
 _local
 wp-config.php
+.htaccess
