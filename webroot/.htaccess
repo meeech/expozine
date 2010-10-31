@@ -1,6 +1,9 @@
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+RewriteEngine On
+# may need RewriteBase on live server. Still unsure.
+# RewriteBase /cake_wp/
+# RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /expozine_cake/webroot/wp_engine/index.php [L]
 </IfModule>

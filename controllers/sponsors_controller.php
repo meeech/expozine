@@ -6,7 +6,7 @@ class SponsorsController extends AppController {
     var $components = array('Upload');
 
     function beforeFilter() {
-        $this->Auth->allow(array('random'));
+        $this->Auth->allow(array('random','display'));
         parent::beforeFilter();
     }
 
@@ -23,6 +23,11 @@ class SponsorsController extends AppController {
 		}
 		$this->set('sponsor', $this->Sponsor->read(null, $id));
 	}
+
+    // Called by wordpress to get the sponsors list
+    function display() {
+        $this->layout = false;
+    }
 
     function random($limit = false) {
         return $this->Sponsor->find('all', array('order' => 'RAND()', 'limit'=>$limit));

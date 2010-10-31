@@ -3,3 +3,4 @@ config/database.php
 webroot/index.php
 tmp/*
 _local
+wp-config.php

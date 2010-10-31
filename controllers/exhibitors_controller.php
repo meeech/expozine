@@ -14,8 +14,13 @@ class ExhibitorsController extends AppController {
      * @return void
      **/
     function beforeFilter() {
-        $this->Auth->allow(array('all', 'register', 'success'));
+        $this->Auth->allow(array('all', 'register', 'success','display'));
         parent::beforeFilter();
+    }
+
+    // Called by wordpress to get the sponsors list
+    function display() {
+        $this->layout = false;
     }
 
 	function index() {

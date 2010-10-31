@@ -14,9 +14,6 @@
 	   }
 	</style>
 </head>
-<style type="text/css" media="screen">
-</style>
-
 <body>
 <div class="yui3-g">
     <div class="hd yui3-u-1">

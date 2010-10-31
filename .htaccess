@@ -1,5 +1,7 @@
+Options +FollowSymLinks
 <IfModule mod_rewrite.c>
     RewriteEngine on
-    RewriteRule    ^$    webroot/    [L]
-    RewriteRule    (.*) webroot/$1    [L]
+
+    RewriteRule    ^$   webroot/wp_engine/ [L] # makes sure we catch the / path - home, pushed to wp install.
+    RewriteRule    (.*) webroot/$1    [L] #everything else push to webroot
  </IfModule>
