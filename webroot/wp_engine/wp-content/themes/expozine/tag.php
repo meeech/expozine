@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-		<div class="bd yui3-u-1">
+		<div class="bd yui3-u-3-4">
 			<div id="content" role="main">
 
 				<h1 class="page-title"><?php
