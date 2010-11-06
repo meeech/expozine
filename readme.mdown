@@ -2,7 +2,7 @@ Hi.
 
 This is the codebase for the expozine [site](http://www.expozine.ca).
 
-It's Wordpress driving the pages & posts, and a CakePHP app handling exhibitors, registration and sponsors.  
+It's Wordpress driving the pages & posts, and a CakePHP (1.3) app handling exhibitors, registration and sponsors.  
 
 We're using the Wordpress plugin [WPML](http://www.wpml.org) for the multilingual side of things.
 
