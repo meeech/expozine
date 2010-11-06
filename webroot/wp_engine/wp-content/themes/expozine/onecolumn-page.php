@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-		<div id="container" class="one-column">
+		<div id="container" class="bd yui3-u-1">
 			<div id="content" role="main">
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

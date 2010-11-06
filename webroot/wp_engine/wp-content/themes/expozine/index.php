@@ -15,7 +15,7 @@
 
 get_header(); ?>
 
-		<div id="container">
+		<div class="bd yui3-u-1" id="container">
 			<div id="content" role="main">
 
 			<?php
@@ -28,5 +28,8 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #container -->
 
-<?php get_sidebar(); ?>
+        <div class="sidebar yui3-u-1-4">
+            <?php get_sidebar(); ?>
+        </div>
+
 <?php get_footer(); ?>

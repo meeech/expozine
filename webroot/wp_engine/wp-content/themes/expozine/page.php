@@ -8,15 +8,13 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Expozine
+ * @since expozine 1.0
  */
 
 get_header(); ?>
 <div class="bd yui3-u-3-4"> 
 	<div class="content">
-<?php //echo fetchSponsors(); ?>
-<?php //echo fetchExhibitors(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
     				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="entry-content">

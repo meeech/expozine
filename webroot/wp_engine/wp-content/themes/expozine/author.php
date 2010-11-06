@@ -56,5 +56,8 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 			</div><!-- #content -->
 		</div><!-- #container -->
 
-<?php get_sidebar(); ?>
+        <div class="sidebar yui3-u-1-4">
+            <?php get_sidebar(); ?>
+        </div>
+
 <?php get_footer(); ?>
