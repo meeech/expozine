@@ -10,13 +10,7 @@ I'm putting it up here mainly in case it helps anyone else get wordpress & cake 
 
 Otherwise it's been kept fairly simple.
 
-Why not use the custom post types/taxonomy in wordpress? 
-
-On the surface, it looked like it would be fine. But at the time, I couldn't find any clear answers that I could do what I needed to, including making it bilingual (Thats one of my biggest gripes with wp - the docs/codex - eg: sometime I search for a problem, and you find stuff from WP 1.5). I didn't have the time to go down that rabbit hole.  And it's pretty some simple relational data, and form validation. Getting that portion of the site up fast was the motivation. 
-
-So the old pages from the site were thrown into cake pages, and Wordpress was added after. 
-
-Uses some rewrites to route things to wordpress install in webroot, and in the [functions.php](https://github.com/meeech/expozine/blob/master/webroot/wp_engine/wp-content/themes/expozine/functions.php#L41-50) of the expozine theme, you'll see we just fetch the fragments we need from cake to display sponsors & exhibitors. 
+Uses some .htaccess rewrites to route things to wordpress install in webroot, and in the [functions.php](https://github.com/meeech/expozine/blob/master/webroot/wp_engine/wp-content/themes/expozine/functions.php#L41-50) of the expozine theme, you'll see we just fetch the fragments we need from cake to display sponsors & exhibitors. 
 
 The cake forms are still accessible via direct url. 
 
@@ -27,6 +21,12 @@ One change i made in my cake core.php when i went live was uncommenting the conf
 You may have to change that to suit your setup.
 
 Overall, it's working ok. There's one or two kinks to work out (like logging into admin with a redirect). Accessing via hitting the wp-login.php directly works fine, but trying to log in when redirect is set doesn't work. 
+
+Why not use the custom post types/taxonomy in wordpress? 
+
+On the surface, it looked like custom post types would be fine. But at the time, I couldn't find any clear answers that I could do what I needed to, including making it bilingual ( one of my biggest gripes with wp - the docs/codex - eg: sometime I search for a problem, and you find stuff from WP 1.5). WPML wasn't clear at the time (it's been updated the last few months).  I didn't have the time to go down that rabbit hole.  And it's pretty some simple relational data, and form validation. Getting that portion of the site up fast was the motivation. 
+
+So the old pages from the site were thrown into cake pages, and Wordpress was added after. 
 
 When I have to do this again, I think i would move the cake install to a subdomain, and just install wp on www. I think that might turn out to be the simpler solution. Or, who knows - i may have reason to dive further into wp, in which case, might just go with custom. I've since learnt what I want to do can be done all in wp.
 
