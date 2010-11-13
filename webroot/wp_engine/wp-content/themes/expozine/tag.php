@@ -10,7 +10,7 @@
 get_header(); ?>
 
 		<div class="bd yui3-u-3-4">
-			<div id="content" role="main">
+			<div class="content" role="main">
 
 				<h1 class="page-title"><?php
 					printf( __( 'Tag Archives: %s', 'twentyten' ), '<span>' . single_tag_title( '', false ) . '</span>' );

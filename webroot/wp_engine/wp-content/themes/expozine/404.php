@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <div class="bd yui3-u-1"> 
-		<div id="content" role="main">
+		<div class="content" role="main">
 				<h1 class="entry-title"><?php _e( 'Not Found', 'twentyten' ); ?></h1>
 				<div class="entry-content">
 					<p><?php _e( 'Apologies, but the page you requested could not be found. Perhaps searching will help.', 'twentyten' ); ?></p>

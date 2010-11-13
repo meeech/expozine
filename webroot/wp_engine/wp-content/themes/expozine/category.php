@@ -10,7 +10,7 @@
 get_header(); ?>
 
 		<div class="bd yui3-u-1" id="container">
-			<div id="content" role="main">
+			<div class="content" role="main">
 
 				<h1 class="page-title"><?php
 					printf( __( 'Category Archives: %s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );

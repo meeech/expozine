@@ -16,7 +16,7 @@
 get_header(); ?>
 
 		<div class="yui3-u-3-4" id="container">
-			<div id="content" role="main">
+			<div class="content" role="main">
 
 			<?php
 			/* Run the loop to output the posts.

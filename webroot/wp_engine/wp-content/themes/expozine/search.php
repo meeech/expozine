@@ -9,7 +9,7 @@
 
 get_header(); ?>
 		<div class="bd yui3-u-1" id="container">
-			<div id="content" role="main">
+			<div class="content" role="main">
 
 <?php if ( have_posts() ) : ?>
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyten' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
