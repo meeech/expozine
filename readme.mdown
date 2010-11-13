@@ -28,7 +28,7 @@ You may have to change that to suit your setup.
 
 Overall, it's working ok. There's one or two kinks to work out (like logging into admin with a redirect). Accessing via hitting the wp-login.php directly works fine, but trying to log in when redirect is set doesn't work. 
 
-When I have to do this again, I think i would move the cake install to a subdomain, and just install wp on www. I think that might turn out to be the simpler solution. Embed things like the form in an iframe.
+When I have to do this again, I think i would move the cake install to a subdomain, and just install wp on www. I think that might turn out to be the simpler solution. Or, who knows - i may have reason to dive further into wp, in which case, might just go with custom. I've since learnt what I want to do can be done all in wp.
 
 If you have any better suggestions/comments/feedback let me know.
 
