@@ -19,6 +19,7 @@
         <li><a href="http://cakephp.org/">cakephp</a></li>
         <li><a href="http://wordpress.org/">wordpress</a></li>
         <li><a href="http://wpml.org/">multilingual wordpress</a></li>
+        <li><a href="https://github.com/meeech/expozine">code on github</a></li>
     </ul>
 </div>
 <?php

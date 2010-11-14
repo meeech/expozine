@@ -20,6 +20,8 @@ One change i made in my cake core.php when i went live was uncommenting the conf
 
 You may have to change that to suit your setup.
 
+You'll find a copy of the schema in config/schema/expozine.sql. This just contains the sql for the cake component. You should install wp in the regular fashion.
+
 Overall, it's working ok. There's one or two kinks to work out (like logging into admin with a redirect). Accessing via hitting the wp-login.php directly works fine, but trying to log in when redirect is set doesn't work. 
 
 Why not use the custom post types/taxonomy in wordpress? 
