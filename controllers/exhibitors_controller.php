@@ -4,7 +4,15 @@ class ExhibitorsController extends AppController {
 
 	var $name = 'Exhibitors';
 
-    var $components = array('Email');
+    var $components = array(
+        'Email',
+        'Pdfize.Pdf' => array(
+            'actions' => array('success_pdf'),
+            'debug' =>false, //Set to TRUE to output to browser instead of generating pdf
+            'size' => 'letter',
+            'orientation' => 'portrait'
+        )
+    );
 
     var $paginate = array('limit'=>100);
 
@@ -66,7 +74,6 @@ class ExhibitorsController extends AppController {
 		$this->set(compact('years'));
 	}
 
-
     /**
      * undocumented function
      *
@@ -82,6 +89,26 @@ class ExhibitorsController extends AppController {
 
         $this->set(compact('exhibitor'));
     }
+
+
+    /**
+     * Output PDF of success page
+     *
+     * @return void
+     **/
+    function success_pdf() {
+        //DEBUG
+        //$this->Session->write('exhibitor_id', '4cabe41f-6c08-4131-91cb-649fcf3a977b');
+        
+        $exhibitor = false;
+        if($this->Session->read('exhibitor_id')) {
+            $exhibitor = $this->Exhibitor->read(null, $this->Session->read('exhibitor_id'));
+        }
+
+        $this->set(compact('exhibitor'));
+        $this->render('success');
+    }
+
 
 
 	function view($id = null) {
