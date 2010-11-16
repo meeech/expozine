@@ -1,3 +1,6 @@
 [submodule "plugins/csver"]
 	path = plugins/csver
 	url = git://github.com/plank/CSVer.git
+[submodule "plugins/pdfize"]
+	path = plugins/pdfize
+	url = git://github.com/plank/pdfize.git
