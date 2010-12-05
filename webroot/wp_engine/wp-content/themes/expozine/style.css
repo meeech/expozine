@@ -325,3 +325,7 @@ ul.exhibitors li {
     width: 33%;
 }
 
+
+dl.gallery-item {
+    display: inline-block;
+}
