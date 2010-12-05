@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-		<div id="container" class="single-attachment">
+		<div id="container" class="single-attachment bd yui3-u-1">
 			<div class="content" role="main">
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
