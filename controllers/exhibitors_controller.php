@@ -14,7 +14,10 @@ class ExhibitorsController extends AppController {
         )
     );
 
-    var $paginate = array('limit'=>100);
+    var $paginate = array(
+        'limit'=>100,
+        'conditions' => array('Year.year'=> 2011)
+    );
 
     /**
      * undocumented function
