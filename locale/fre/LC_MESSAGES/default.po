@@ -16,7 +16,7 @@ msgid "Name"
 msgstr "Nom"
 
 msgid "Contact Name"
-msgstr "Personne Contact"
+msgstr "Compagnie / Maison d’édition / Titre"
 
 msgid "Phone Number"
 msgstr "T&eacute;l&eacute;phone"
@@ -31,10 +31,10 @@ msgid "City"
 msgstr "Ville"
 
 msgid "Province/State"
-msgstr "Province/State"
+msgstr "Province"
 
 msgid "Postal/Zip Code"
-msgstr "Code Postal/Zip"
+msgstr "Code Postal"
 
 msgid "Website"
 msgstr "Site web"
@@ -55,7 +55,10 @@ msgid "Sunday"
 msgstr "Dimanche"
 
 msgid "Saturday &amp; Sunday"
-msgstr "Samedi et Dimanche"
+msgstr "Deux Journées"
+
+msgid "Category"
+msgstr "Catégorie"
 
 msgid "Books/Zines"
 msgstr "Livres/fanzine"

@@ -199,12 +199,14 @@ div.checkbox label {
 
 div.radio {
     padding-left: 20px;
+    margin-bottom: 0px;
 }
 div.radio label {
     padding-right: 20px;
 }
 div.radio fieldset {
     border: 0px;
+    margin-bottom: 0px;
 }
 input[type=text] {
   width:75%;

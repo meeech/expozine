@@ -47,7 +47,7 @@ class Year extends AppModel {
      **/
     function currentYear() {
         $this->recursive = -1;
-        return $this->findByYear('2010');
+        return $this->findByYear('2011');
     }
 }
 ?>
