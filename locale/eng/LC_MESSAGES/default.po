@@ -8,6 +8,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Contact Name"
+msgstr "Company / Press/ Title"
+
+msgid "Phone Number"
+msgstr "Phone"
+
+msgid "Saturday &amp; Sunday"
+msgstr "Two Days"
+
 msgid "notempty_title"
 msgstr "Name of publication or company name is required."
 
