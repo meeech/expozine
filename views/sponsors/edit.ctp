@@ -15,7 +15,7 @@
 		echo $form->input('image_fr_file', array('type'=>'file'));
         echo '<p>Current french image: '.$this->data['Sponsor']['image_fr'].'</p>';
         echo $form->input('image_fr', array('type'=>'hidden'));
-		echo $this->Form->input('Year');
+		// echo $this->Form->input('Year');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

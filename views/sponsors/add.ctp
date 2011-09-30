@@ -12,7 +12,7 @@
         echo $form->input('image_en', array('type'=>'hidden'));
 		echo $form->input('image_fr_file', array('type'=>'file'));
         echo $form->input('image_fr', array('type'=>'hidden'));
-		echo $this->Form->input('Year');
+		// echo $this->Form->input('Year');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>
