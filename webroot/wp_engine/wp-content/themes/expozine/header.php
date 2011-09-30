@@ -59,5 +59,5 @@
 <body <?php body_class(); ?>>
 <div class="yui3-g"> 
     <div class="hd yui3-u-1"> 
-		<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><span class="year">2010</span></h1> 
+		<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> 
     </div>

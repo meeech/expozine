@@ -17,7 +17,7 @@
 <body>
 <div class="yui3-g">
     <div class="hd yui3-u-1">
-		<h1><?php echo $this->Html->link(__('expozine', true), 'http://www.expozine.ca/'.$lang ); ?><span class="year">2010</span></h1>
+		<h1><?php echo $this->Html->link(__('expozine', true), 'http://www.expozine.ca/'.$lang ); ?></h1>
     </div>
     <div class="bd yui3-u-3-4">
         <div class="content">
