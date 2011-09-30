@@ -26,8 +26,11 @@ get_header(); ?>
 
 <?php endwhile; ?>
 <?php 
-if(2010 == the_title('','',false)) {
-    echo fetchExhibitors( get_current_language() );
+if(2011 == the_title('','',false)) {
+    echo fetchExhibitors( get_current_language(), 2011 );
+} 
+else if(2010 == the_title('','',false)) {
+    echo fetchExhibitors( get_current_language(), 2010 );
 } 
 ?>
 

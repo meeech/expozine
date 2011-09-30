@@ -27,8 +27,9 @@ class ExhibitorsController extends AppController {
     }
 
     // Called by wordpress to get the sponsors list
-    function display() {
+    function display($year) {
         $this->layout = false;
+				$this->set('year', $year);
     }
 
 	function index() {
@@ -40,10 +41,10 @@ class ExhibitorsController extends AppController {
 
 	}
 
-    function all($limit = false) {
+    function all($year = false) {
         return $this->Exhibitor->find('all', array(
-            'order' => 'title ASC', 'limit'=>$limit,
-            'conditions' =>array('verified'=> 1)
+            'order' => 'title ASC', 'limit'=>false,
+            'conditions' =>array('verified'=> 1, 'year' => $year)
         ));
     }
 

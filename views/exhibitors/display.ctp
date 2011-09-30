@@ -2,7 +2,7 @@
     <div class="content">
         <a name="exhibitors"></a>
         <?php 
-        echo $this->element('exhibitor/list', array('exhibitors'=> $this->requestAction("/{$lang}/exhibitors/all") )); 
+        echo $this->element('exhibitor/list', array('exhibitors'=> $this->requestAction("/{$lang}/exhibitors/all/{$year}") )); 
         ?>
     </div>
 </div>

@@ -44,8 +44,8 @@ function fetchSponsors( $lang = 'en' ) {
     return $data;
 }
 
-function fetchExhibitors( $lang = 'en' ) {
-    $data = file_get_contents(WP_HOME.'/webroot/index.php/'.$lang.'/exhibitors/display');
+function fetchExhibitors( $lang = 'en', $year ) {
+    $data = file_get_contents(WP_HOME.'/webroot/index.php/'.$lang.'/exhibitors/display/'.$year);
     return $data;
 }
 
